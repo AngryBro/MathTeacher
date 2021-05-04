@@ -1,0 +1,357 @@
+<html lang="ru">
+    <head>
+        <title>Переходы</title>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <style>
+            body {
+            font-size: 30pt;
+            margin-left: 100;
+            }
+            li {
+            margin: 30px 0;
+            }
+            a {
+            text-decoration: none;
+            color: black;
+            }
+            a:hover {
+            color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><a name="begin"></a><a href="index.html">Равносильные переходы</a></h1>
+        <ul>
+            <li><a href="#equal">\( \LARGE = \)</a></li>
+            <li><a href="#notequal">\( \LARGE \neq \)</a></li>
+            <li><a href="#more">\( \LARGE > \normalsize,~ \LARGE< \normalsize,~ \LARGE \geq \normalsize,~ \LARGE \leq \)</a></li>
+            <li><a href="#andor">\( \LARGE \{ \normalsize,~ \LARGE [ \)</a></li>
+        </ul>
+        <h2><a name="equal"></a><a href="#begin">\( \Huge = \)</a></h2>
+            <ol>
+                <li>
+                    \( \displaystyle a_n \cdot x^n + a_{n-1} \cdot x^{n-1} + \ldots
+                    + a_2 \cdot x^2 + a_1 \cdot x + a_0 = 0 \Leftrightarrow 
+                    \left[
+                    \begin{array}{l}
+                    x=x_1 \\
+                    x=x_2 \\
+                    \ldots \\
+                    x=x_n
+                    \end{array}
+                    \right.\)
+                </li>
+                <li>\( \displaystyle a_1 \cdot a_2 \cdot \ldots \cdot a_n = 0 \Leftrightarrow
+                    \left[
+                        \begin{array}{l}
+                            \left\{
+                                \begin{array}{l}
+                                    a_1=0 \\
+                                    D(a_2),~D(a_3),~\ldots,~D(a_n)  
+                                \end{array}
+                            \right. \\
+                            \left\{
+                                \begin{array}{l}
+                                    a_2=0 \\
+                                    D(a_1),~D(a_3),~\ldots,~D(a_n)  
+                                \end{array}
+                            \right.\\
+                            \ldots \\
+                            \left\{
+                                \begin{array}{l}
+                                    a_n=0 \\
+                                    D(a_1),~D(a_2),~\ldots,~D(a_{n-1})  
+                                \end{array}
+                            \right.
+                        \end{array}
+                    \right.
+                    \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                            \left[
+                                \begin{array}{l}
+                                    a_1 = 0 \\
+                                    a_2 = 0 \\
+                                    \ldots \\
+                                    a_n = 0
+                                \end{array}
+                            \right. \\
+                            D(a_1),~D(a_2),~ \ldots,~ D(a_n)
+                        \end{array}
+                    \right.
+                    \)
+                </li>
+                <li>
+                    \( \displaystyle \frac{a}{b} = 0 \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                            a = 0 \\
+                            b \neq 0
+                        \end{array}
+                    \right.
+                    \)
+                </li>
+                <li>
+                    \( \displaystyle \operatorname{monotone}{(a)} = \operatorname{monotone}{(b)}
+                    \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                            a=b \\
+                            a \in D(\operatorname{monotone})
+                        \end{array}
+                    \right.
+                    \)
+                </li>
+                <li>
+                    \( \displaystyle \sqrt[2n]{a} = b 
+                    \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                            a = b^{2n} \\
+                            b \geq 0
+                        \end{array}
+                    \right.
+                    \)
+                </li>
+                <li>
+                    \( \displaystyle
+                    a_n \cdot \sin^n{x} + a_{n-1} \cdot \sin^{n-1}{x} \cdot \cos{x} +
+                    a_{n-2} \cdot \sin^{n-2} \cdot \cos^2{x} + \ldots
+                    + a_1 \cdot \sin{x} \cdot \cos^{n-1} + a_0 \cdot \cos^n{x} = 0
+                    \Leftrightarrow  \) <br><br> \(
+                    \Leftrightarrow a_n \cdot \operatorname{tg}^{n}{x} + a_{n-1} \cdot \operatorname{tg}^{n-1}{x} + \ldots
+                    + a_1 \cdot \operatorname{tg}{x} + a_0 = 0
+                    \)
+                </li>
+            </ol>
+        <h2><a name="notequal"></a><a href="#begin">\( \Huge \neq \)</a></h2>
+            <ol>
+                <li>
+                    \(
+                    a_1 \cdot a_2 \cdot \ldots \cdot a_n \neq 0
+                    \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                            a_1 \neq 0 \\
+                            a_2 \neq 0 \\
+                            \ldots \\
+                            a_n \neq 0
+                        \end{array}
+                    \right.
+                    \)
+                </li>
+                <li>
+                    \( \displaystyle
+                    \frac{a}{b} \neq 0 \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                            a \neq 0 \\
+                            b \neq 0
+                        \end{array}
+                    \right.
+                    \)
+                </li>
+                <li>
+                    \(
+                    \operatorname{monotone}{(a)} \neq \operatorname{monotone}{(b)}
+                    \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                            a \neq b \\
+                            a \in D(\operatorname{monotone}) \\
+                            b \in D(\operatorname{monotone})
+                        \end{array}
+                    \right.
+                    \)
+                </li>
+            </ol>
+        <h2><a name="more"></a><a href="#begin">\( \Huge > \normalsize,~ \Huge< \normalsize,~ \Huge \geq \normalsize,~ \Huge \leq \)</a></h2>
+            <ol>
+                <li>
+                    \( \displaystyle
+                    \frac{(x-a_1)^{k_1} \cdot (x-a_2)^{k_2} \cdot \ldots \cdot (x-a_n)^{k_n}}
+                    {(x-b_1)^{t_1} \cdot (x-b_2)^{t_2} \cdot \ldots \cdot (x-b_m)^{t_m}} \vee 0
+                    \stackrel{м.~и.}{\Longleftrightarrow}
+                    \)
+                </li>
+                <li>
+                    \(
+                    \operatorname{increasing}{(a)} \vee \operatorname{increasing}{(b)}
+                    \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                            a \vee b \\
+                            a \in D(\operatorname{increasing}) \\
+                            b \in D(\operatorname{increasing})
+                        \end{array}
+                    \right.
+                    \)
+                </li>
+                <li>
+                    \(
+                    \operatorname{decreasing}{(a)} \vee \operatorname{decreasing}{(b)}
+                    \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                            a \land b \\
+                            a \in D(\operatorname{decreasing}) \\
+                            b \in D(\operatorname{decreasing})
+                        \end{array}
+                    \right.
+                    \)
+                </li>
+                <li>
+                    \( \displaystyle
+                    c \cdot ( \operatorname{increasing}{(a)} - \operatorname{increasing}{(b)} )^{\pm n} \vee 0
+                    \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                            c \cdot (a - b)^{\pm n} \vee 0  \\
+                            a \in D(\operatorname{increasing}) \\
+                            b \in D(\operatorname{increasing})
+                        \end{array}
+                    \right.
+                    \)
+                </li>
+            </ol>
+        <h2><a name="andor"></a><a href="#begin">\( \Huge \{ \normalsize,~ \Huge [  \)</a></h2>
+            <ol>
+                <li>
+                \(
+                    \displaystyle false \Leftrightarrow  \varnothing
+                \)
+                </li>
+                <li>
+                \(
+                    true \Leftrightarrow D(true)
+                \)
+                </li>
+                <li>
+                \(
+                    \left\{
+                        \begin{array}{l}
+                            A \\
+                            \varnothing
+                        \end{array}
+                    \right.
+                    \Leftrightarrow
+                    \varnothing
+                \)
+                </li>
+                <li>
+                \(
+                    \left\{
+                        \begin{array}{l}
+                            A \\
+                            x \in R
+                        \end{array}
+                    \right.
+                    \Leftrightarrow A
+                \)
+                </li>
+                <li>
+                \(
+                    \left[
+                        \begin{array}{l}
+                            A \\
+                            \varnothing
+                        \end{array}
+                    \right.
+                    \Leftrightarrow A
+                \)
+                </li>
+                <li>
+                \(
+                    \left[
+                        \begin{array}{l}
+                            A \\
+                            x \in R
+                        \end{array}
+                    \right.
+                    \Leftrightarrow x \in R
+                \)
+                </li>
+                <li>
+                \(
+                    \left\{
+                        \begin{array}{l}
+                            A = B \\
+                            F(A)
+                        \end{array}
+                    \right.
+                    \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                            A = B \\
+                            F(B)
+                        \end{array}
+                    \right.
+                \)
+                </li>
+                <li>
+                \(
+                    \left\{
+                        \begin{array}{l}
+                            \left[
+                                \begin{array}{l}
+                                    A \\
+                                    B
+                                \end{array}
+                            \right. \\
+                            \left[
+                                \begin{array}{l}
+                                    A \\
+                                    C
+                                \end{array}
+                            \right. \\
+                        \end{array}
+                    \right.
+                    \Leftrightarrow
+                    \left[
+                        \begin{array}{l}
+                        A \\
+                        \left\{
+                            \begin{array}{l}
+                                B \\
+                                C
+                            \end{array}
+                        \right.
+                        \end{array}
+                        \right.
+                \)
+                </li>
+                <li>
+                \(
+                    \left[
+                        \begin{array}{l}
+                            \left\{
+                                \begin{array}{l}
+                                    A \\
+                                    B
+                                \end{array}
+                            \right. \\
+                            \left\{
+                                \begin{array}{l}
+                                    A \\
+                                    C
+                                \end{array}
+                            \right. \\
+                        \end{array}
+                    \right.
+                    \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                        A \\
+                        \left[
+                            \begin{array}{l}
+                                B \\
+                                C
+                            \end{array}
+                        \right.
+                        \end{array}
+                        \right.
+                \)
+                </li>
+            </ol>
+    </body>
+    
