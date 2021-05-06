@@ -1,0 +1,154 @@
+<html lang="en">
+    <head>
+        <title>Координатная плоскость</title>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1><a name="begin"></a><a href="index.html">Координатная плоскость \(Oxy\)</a></h1>
+        <ul>
+            <li><a href="#graphics">Стандартные графики</a></li>
+            <li><a href="#work">Работа в координатах</a></li>
+        </ul>
+        <h2><a name="graphics"></a><a href="#begin">Стандартные графики</a></h2>
+        <ol>
+            <li>
+            \(
+                ax+by+c=0
+            \) &mdash; прямая
+            </li>
+            <li>
+            \(
+                y=a(x-b)+c
+            \) &mdash; невертикальная прямая
+                <ul>
+                    <li>От \(a\) зависит угол наклона прямой</li>
+                    <li>Содержит точку \((b;~c)\)</li>
+                </ul>
+            </li>
+            <li>
+            \(
+                x=a
+            \) &mdash; вертикальная прямая
+                <ul>
+                    <li>Содержит точку \((a;~0)\)</li>
+                </ul>
+            </li>
+            <li>
+            \(
+                y = a(x-b)^2 + c,~ a \neq 0
+            \) &mdash; парабола
+                <ul>
+                    <li>От \(a\) зависит направление ветвей и ширина параболы</li>
+                    <li>Вершина \( (b;~c) \)</li>
+                </ul>
+            </li>
+            <li>
+            \(
+                y = a|x-b|+c
+            \) &mdash; угол
+                <ul>
+                    <li>От \(a\) зависит направление сторон и величина угла</li>
+                    <li>Вершина \( (b;~c) \)</li>
+                    <li>Левая сторона \(
+                    \left\{
+                        \begin{array}{l}
+                            y=-a(x-b)+c \\
+                            x \leq b
+                        \end{array}
+                    \right.
+                    \)</li>
+                    <li>Правая сторона \(
+                    \left\{
+                        \begin{array}{l}
+                            y=a(x-b)+c \\
+                            x \geq b
+                        \end{array}
+                    \right.
+                    \)</li>
+                </ul>
+            </li>
+            <li>
+            \(
+                (x-a)^2 + (y-b)^2 = c,~c>0
+            \) &mdash; окружность
+                <ul>
+                    <li>Центр \( (a;~b) \)</li>
+                    <li>Радиус \( \sqrt{c} \)</li>
+                </ul>
+            </li>
+            <li>
+            \( \displaystyle
+                y = \frac{a}{x-b} + c,~a \neq 0
+            \) &mdash; гипербола
+                <ul>
+                    <li>Центр \( (b;~c) \)</li>
+                    <li>От \(a\) зависит положение ветвей и расстояние между ними</li>
+                </ul>
+            </li>
+        </ol>
+        <h2><a name="work"></a><a href="#begin">Работа в координатах</a></h2>
+        <ol>
+            <li>
+                \(
+                    \rho ( (x_1;~y_1);~(x_2;~y_2) ) = \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 }
+                \)
+            </li>
+            <li>
+                \( \displaystyle
+                    \rho ( (x_1;~y_1);~ ax + by + c = 0 ) = \frac{|a x_1 + b y_1 + c|}{\sqrt{a^2 + b^2}}
+                \)
+            </li>
+            <li>
+                Графики \(A(x,~y),~B(x,~y)\)
+                <ul>
+                    <li>Общие точки: \( 
+                        \left\{
+                            \begin{array}{l}
+                                A(x,~y) \\
+                                B(x,~y)
+                            \end{array}
+                        \right.
+                    \)</li>
+                </ul>
+            </li>
+            <li>
+                Окружности \((x-x_1)^2 + (y - y_1)^2 = a_1 \cancel \Leftrightarrow
+                (x-x_2)^2 + (y - y_2)^2 = a_2\):
+                <ul>
+                    <li>Касаются внешним образом: \( \rho ((x_1;~y_1);~(x_2;~y_2)) = \sqrt{a_1} + \sqrt{a_2} \)</li>
+                    <li>Касаются внутренним образом: \( \rho ((x_1;~y_1);~(x_2;~y_2)) = |\sqrt{a_1} - \sqrt{a_2}| \)</li>
+                </ul>
+            </li>
+            <li>
+                Окружность \( (x-x_0)^2 + (y - y_0)^2 = z \) и прямая \(ax+by+c=0\)
+                <ul>
+                    <li>Касаются: \( \rho ( (x_0;~y_0);~ax+by+c=0 ) = \sqrt{z} \)</li>
+                </ul>
+            </li>
+            <li>
+                Графики \( y=a(x),~y=b(x)\)
+                <ul>
+                    <li>
+                        Касаются: \( 
+                            \left\{
+                                \begin{array}{l}
+                                    a(x)=b(x) \\
+                                    (a(x))'=(b(x))'
+                                \end{array}
+                            \right.
+                        \)
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Прямые \(y=a_1 x + b_1,~ y = a_2 x + b_2\)
+                <ul>
+                    <li>
+                        Параллельны или совпадают: \( a_1 = a_2 \)
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>
