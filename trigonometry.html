@@ -12,25 +12,29 @@
             <li><a href="#algebra">Тригонометрия в алгебре</a></li>
         </ul>
         <h2><a name="geometry"></a><a href="#begin">Тригонометрия в геометрии</a></h2>
+        \(\alpha\) &ndash; острый угол прямоугольного треугольника
+        <h4>Определения</h4>
         <ol>
-            \(\alpha\) &ndash; острый угол прямоугольного треугольника
             <li>\(\sin{\alpha}\) &ndash; отношение противолежащего катета к гипотенузе</li>
             <li>\(\cos{\alpha}\) &ndash; отношение прилежащего катета к гипотенузе</li>
             <li>\(\operatorname{tg}{\alpha}\) &ndash; отношение противолежащего катета к прилежащему</li>
             <li>\(\operatorname{ctg}{\alpha}\) &ndash; отношение прилежащего катета к противолежащему</li>
+            <li>\( \arcsin{a} \) &ndash; острый угол, синус которого равен \(a\)</li>
+            <li>\( \arccos{a} \) &ndash; острый угол, косинус которого равен \(a\)</li>
+            <li>\( \operatorname{arctg}{a} \) &ndash; острый угол, тангенс которого равен \(a\)</li>
+            <li>\( \operatorname{arcctg}{a} \) &ndash; острый угол, котангенс которого равен \(a\)</li>
+        </ol>
+        <h4>Свойства</h4>
+        <ol>
             <li>\(\sin{(180^{\circ}-\alpha)}=\sin{\alpha}\)</li>
             <li>\(\cos{(180^{\circ}-\alpha)}=-\cos{\alpha}\)</li>
             <li>\(\operatorname{tg}{(180^{\circ}-\alpha)}=-\operatorname{tg}{\alpha}\)</li>
             <li>\(\operatorname{ctg}{(180^{\circ}-\alpha)}=-\operatorname{ctg}{\alpha}\)</li>
-            <li>\( \arcsin{a} \) &ndash; угол \(\in \left[-\frac{\pi}{2};~\frac{\pi}{2}\right]\), синус которого равен \(a\)</li>
-            <li>\( \arccos{a} \) &ndash; угол \(\in \left[0;~\pi\right]\), косинус которого равен \(a\)</li>
-            <li>\( \operatorname{arctg}{a} \) &ndash; угол \(\in \left[-\frac{\pi}{2};~\frac{\pi}{2}\right]\), тангенс которого равен \(a\)</li>
-            <li>\( \operatorname{arcctg}{a} \) &ndash; угол \(\in \left[0;~\pi\right]\), котангенс которого равен \(a\)</li>
             <li>
                 \(
                     \begin{array}[t]{|c|c|c|c|}
                         \hline
-                        \operatorname{trigfunc} & \displaystyle \frac{\pi}{6} & \displaystyle \frac{\pi}{4} & \displaystyle \frac{\pi}{3} \\
+                        \operatorname{trigfunc} & \displaystyle \frac{\pi}{6}=30^{\circ} & \displaystyle \frac{\pi}{4}=45^{\circ} & \displaystyle \frac{\pi}{3}=60^{\circ} \\
                         \hline
                         \sin & \displaystyle \frac{1}{2} & \displaystyle \frac{1}{\sqrt{2}} & \displaystyle \frac{\sqrt{3}}{2} \\
                         \hline 
@@ -47,7 +51,7 @@
         <h2><a name="circle"></a><a href="#begin">Единичная числовая окружность</a></h2>
         Единичная числовая окружность &ndash; окружность в системе координат, с центром O(0; 0), радиуса 1
         <ol>
-            <li>Начало отсчёта &ndash; точка (1; 0)</li>
+            <li>Начало отсчёта &ndash; число 0, точка (1; 0)</li>
             <li>Направление &laquo;вперёд&raquo; &ndash; против часовой стрелки</li>
             <li>Направление &laquo;назад&raquo; &ndash; по часовой стрелке</li>
             <li>Длина окружности 2&pi;</li>
@@ -55,45 +59,37 @@
             <li>От \(a\) назад угол \(\beta :~~ a - \beta\)</li>
         </ol>
         <h2><a name="algebra"></a><a href="#begin">Тригонометрия в алгебре</a></h2>
+        <h4>Определения</h4>
         <ol>
-            <h4>Определения</h4>
             <li>\( \sin{x} \) &ndash; ордината точки \(x\) на числовой единичной окржности</li>
             <li>\( \cos{x} \) &ndash; абсцисса точки \(x\) на числовой единичной окржности</li>
             <li>\(\displaystyle  \operatorname{tg}{x} = \frac{\sin{x}}{\cos{x}} \)</li>
             <li>\(\displaystyle  \operatorname{ctg}{x} = \frac{\cos{x}}{\sin{x}}\)</li>
-            <h4>Свойства</h4>
+        </ol>
+        <h4>Свойства</h4>
+        <ol>
             <li>\(\displaystyle \sin^2{x} + \cos^2{x} = 1 \)</li>
             <li>\(\displaystyle \sin{2x} = 2 \sin{x} \cos{x} \)</li>
             <li>\(\displaystyle \cos{2x} = \cos^2{x} - \sin^2{x} = 2 \cos^2{x} - 1 = 1 - 2 \sin^2{x} \)</li>
-            <li>\(\displaystyle  \sin{(\alpha \pm \beta)} = \sin{\alpha} \cos{\beta} \pm \cos{\alpha} \sin{\beta} \)</li>
-            <li>\(\displaystyle  \cos{(\alpha \pm \beta)} = \cos{\alpha} \cos{\beta} \mp \sin{\alpha} \sin{\beta}\)</li>
+            <li value="3">\(\displaystyle \sin^2{x} = \frac{1-\cos{2x}}{2} \)</li>
+            <li value="3">\(\displaystyle \cos^2{x} = \frac{1+\cos{2x}}{2} \)</li>
+            <li>\(\displaystyle  \sin{(x \pm y)} = \sin{x} \cos{y} \pm \cos{x} \sin{y} \)</li>
+            <li>\(\displaystyle  \cos{(x \pm y)} = \cos{x} \cos{y} \mp \sin{x} \sin{y}\)</li>
             <li>Формула приведения [в разработке]</li>
-            <h4>Построение точек на тригонометрической окружности</h4>
+        </ol>
+        <h4>Построение точек на тригонометрической окружности</h4>
+        <ol>
             <li>\( \sin{x} = a \): горизонтальная прямая через \((0;~a)\)</li>
             <li>\( \cos{x} = a \): вертикальная прямая через \((a;~0)\)</li>
             <li>\( \operatorname{tg}{x} = a \): прямая через \((1;~a)\) и \((0;~0)\)</li>
             <li>\( \operatorname{ctg}{x} = a \): прямая через \((a;~1)\) и \((0;~0)\)</li>
-            <li>
-                Решение уравнения 
-                \(\operatorname{trigfunc}{(x)} = a\)
-                <ol>
-                    <li>Построить точки</li>
-                    <li>Острый угол между радиусом к точке и осью абсцисс это &laquo;угол, trigfunc которого равен \(|a|\)&raquo;</li>
-                    <li>Найти частные решения в точках: \(x_1;~x_2;~ \ldots ;~x_n\)</li>
-                    <li>Построить общее решение
-                        \(
-                            \left[
-                                \begin{array}{l}
-                                    x = x_1 + 2\pi k \\
-                                    x = x_2 + 2 \pi k \\
-                                    \ldots \\
-                                    x = x_n + 2 \pi k
-                                \end{array}
-                            \right.,~ k \in Z
-                        \)
-                    </li>
-                </ol>
-            </li>
+            <li>Острый угол между радиусом к точке и осью абсцисс это &laquo;угол, trigfunc которого равен \(|a|\)&raquo;</li>
+        </ol>
+        <h4>Поиск всех чисел в точках</h4>
+        <ol>
+            <li>Точки \(A_1;~A_2;\ldots ;~A_n\) &ndash; серия, если \(\displaystyle \stackrel{\smile}{A_1 A_2}=\stackrel{\smile}{A_2 A_3}=\ldots=\stackrel{\smile}{A_{n-1} A_n}=\stackrel{\smile}{A_n A_1}= \frac{2\pi}{n} \)</li>
+            <li>\(x_0 \in A_{i}\) </li>
+            <li>Все числа в серии: \(\displaystyle x = x_0 + \frac{2\pi k}{n},~k \in \mathbb{Z} \)</li>
         </ol>
     </body>
 </html>
