@@ -1,7 +1,6 @@
 <html lang="en">
     <head>
         <title>Переходы</title>
-        <meta charset="utf-8">
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -204,7 +203,7 @@
             <ol>
                 <li>
                 \(
-                    \displaystyle false \Leftrightarrow  \varnothing
+                    \displaystyle false \Leftrightarrow  x \not \in \mathbb{R}
                 \)
                 </li>
                 <li>
@@ -241,11 +240,11 @@
                     \left\{
                         \begin{array}{l}
                             A \\
-                            \varnothing
+                            x \not \in \mathbb{R}
                         \end{array}
                     \right.
                     \Leftrightarrow
-                    \varnothing
+                    x \not \in \mathbb{R}
                 \)
                 </li>
                 <li>
@@ -253,7 +252,7 @@
                     \left\{
                         \begin{array}{l}
                             A \\
-                            x \in R
+                            x \in \mathbb{R}
                         \end{array}
                     \right.
                     \Leftrightarrow A
@@ -264,7 +263,7 @@
                     \left[
                         \begin{array}{l}
                             A \\
-                            \varnothing
+                            x \not \in \mathbb{R}
                         \end{array}
                     \right.
                     \Leftrightarrow A
@@ -275,7 +274,7 @@
                     \left[
                         \begin{array}{l}
                             A \\
-                            x \in R
+                            x \in \mathbb{R}
                         \end{array}
                     \right.
                     \Leftrightarrow x \in R
@@ -285,15 +284,60 @@
                 \(
                     \left\{
                         \begin{array}{l}
-                            A = B \\
-                            F(A)
+                            a = b \\
+                            F(a)
                         \end{array}
                     \right.
                     \Leftrightarrow
                     \left\{
                         \begin{array}{l}
-                            A = B \\
-                            F(B)
+                            a = b \\
+                            F(b)
+                        \end{array}
+                    \right.
+                \)
+                </li>
+                <li>
+                \(
+                    \left\{
+                        \begin{array}{l}
+                            A \Leftrightarrow B \\
+                            A
+                        \end{array}
+                    \right.
+                    \Leftrightarrow
+                    \left\{
+                        \begin{array}{l}
+                            A \Leftrightarrow B \\
+                            B
+                        \end{array}
+                    \right.
+                \)
+                </li>
+                <li>
+                \(
+                    A \Leftrightarrow
+                    \left[
+                        \begin{array}{l}
+                            \left\{
+                                \begin{array}{l}
+                                    CASE_1 \\
+                                    A
+                                \end{array}
+                            \right. \\
+                            \left\{
+                                \begin{array}{l}
+                                    CASE_2 \\
+                                    A
+                                \end{array}
+                            \right. \\
+                            \ldots \\
+                            \left\{
+                                \begin{array}{l}
+                                    CASE_n \\
+                                    A
+                                \end{array}
+                            \right. \\
                         \end{array}
                     \right.
                 \)
