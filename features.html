@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1><a name="begin"></a><a href="conspects.html">Свойства числовых выражений</a></h1>
+        <h1><a name="begin"></a><a href="conspects.html">Определения и свойства числовых выражений</a></h1>
             <ul>
                 <li><a href="#frac">Дробь</a></li>
                 <li><a href="#log">Логарифм</a></li>
@@ -15,21 +15,21 @@
                 <li><a href="#1root">Корень нечётной степени</a></li>
             </ul>
         <h2><a name="frac"></a><a href="#begin">Дробь</a></h2>
+        <i>Определение:</i> \(\displaystyle \frac{a}{b} = a : b \).<br>
+        
         <ol>
             <li>
             \( \displaystyle \frac{a \cdot c}{b \cdot c} = \frac{a}{b} \) <br>
-            Равносильно если \( c \neq 0 \)
             <ul>
-                <li>\( \longrightarrow \): дописать \(c \neq 0\)</li>
-                <li>\( \longleftarrow \): знать заранее \(c \neq 0\)</li>
+                <li><b>Сократить:</b> дописать в системе \(c \neq 0\).</li>
+                <li><b>Дописать в числитель и знаменатель:</b> знать заранее \(c \neq 0\).</li>
             </ul>
             </li>
             <li>
-                \( \displaystyle a : \frac{b}{c} = \frac{a \cdot c}{b} \) <br>
-                Равносильно если \( c \neq 0 \)
+                \( \displaystyle a : \frac{b}{c} = a \cdot \frac{c}{b} \) <br>
             <ul>
-                <li>\( \longrightarrow \): дописать \(c \neq 0\)</li>
-                <li>\( \longleftarrow \): знать заранее \(c \neq 0\)</li>
+                <li><b>Заменить деление умножением:</b> дописать в системе \(c \neq 0\).</li>
+                <li><b>Заменить умножение делением:</b> знать заранее \(c \neq 0\).</li>
             </ul>
             </li>
             <li>
@@ -38,80 +38,76 @@
             <li>\(\displaystyle \frac{a}{b} \cdot \frac{c}{d} = \frac{a \cdot c}{b \cdot d}  \)</li>
             </ol>
         <h2><a name="log"></a><a href="#begin">Логарифм</a></h2>
+        <i>Определение:</i>
+        \(\displaystyle \log_b{a} = c \Leftrightarrow 
+            \left\{
+                \begin{array}{l}
+                    a^c = b \\
+                    a > 0 \\
+                    a \neq 1 \\
+                    b>0
+                \end{array}
+            \right.
+        \).
             <ol>
             <li>\( \displaystyle \log_a{b^c}= c \cdot \log_a{b} \) <br>
-            Равносильно если \( b \geq 0 \) <br>
-            Равносильно если \( c \) не является чётным числом
                 <ul>
-                    <li>\( \longrightarrow \): знать заранее \( b \geq 0 \)</li>
-                    <li>\( \longleftarrow \): дописать \( b>0 \)</li>
+                    <li><b>Скинуть чётную степень:</b> знать заранее \( b \geq 0 \).</li>
+                    <li><b>Закинуть чётную степень:</b> дописать в системе \( b>0 \).</li>
                 </ul>
             </li>
             <li>
                 \( \displaystyle \log_{a^c}{b} = \frac{1}{c} \cdot \log_a{b} \) <br>
-                Равносильно если \( a \geq 0 \) <br>
-                Равносильно если \(c\) не является чётным числом
                 <ul>
-                    <li>\( \longrightarrow \): знать заранее \(a \geq 0\)</li>
-                    <li>\( \longleftarrow \): дописать \(a>0\)</li>
+                    <li><b>Скинуть чётную степень:</b> знать заранее \( a \geq 0 \).</li>
+                    <li><b>Закинуть чётную степень:</b> дописать в системе \( a>0 \).</li>
                 </ul>
             </li>
             <li>
-                \( \displaystyle \log_a{b \cdot c} = \log_a{b} + \log_a{c} \) <br>
-                Равносильно если \(b \geq 0\)
+                \( \displaystyle \log_a{(b \cdot c)} = \log_a{b} + \log_a{c} \) <br>
                 <ul>
-                    <li>\( \longrightarrow \): знать заранее \(b \geq 0\) </li>
-                    <li>\( \longleftarrow \): дописать \(b>0\)</li>
+                    <li><b>Разъединить:</b> знать заранее \(b \geq 0\) (либо \(c \geq 0\)). </li>
+                    <li><b>Соединить:</b> дописать в системе \(b>0\) (либо \(c > 0\)).</li>
                 </ul>
             </li>
             <li>
                 \( \displaystyle \log_a{\frac{b}{c}} = \log_a{b} - \log_a{c} \) <br>
                 Равносильно если \(b \geq 0\)
                 <ul>
-                    <li>\( \longrightarrow \): знать заранее \(b \geq 0\) </li>
-                    <li>\( \longleftarrow \): дописать \(b>0\)</li>
+                    <li><b>Разъединить:</b> знать заранее \(b \geq 0\) (либо \(c \geq 0\)). </li>
+                    <li><b>Соединить:</b> дописать в системе \(b>0\) (либо \(c > 0\)).</li>
                 </ul>
             </li>
             <li>
                 \( \displaystyle \log_a{a} = 1 \) <br>
-                Равносильно если \( a>0,~a \neq 1 \)
                 <ul>
-                    <li>\( \longrightarrow \): дописать \( a>0,~ a \neq 1 \)</li>
-                    <li>\( \longleftarrow \): знать заранее \( a>0,~ a \neq 1 \)</li>
+                    <li><b>Превратить в 1:</b> дописать в системе \( a>0,~ a \neq 1 \).</li>
+                    <li><b>Расписать 1:</b> знать заранее \( a>0,~ a \neq 1 \).</li>
                 </ul>
             </li>
             <li>
                 \( \displaystyle \log_a{1} = 0 \) <br>
-                Равносильно если \( a>0,~a \neq 1 \)
                 <ul>
-                    <li>\( \longrightarrow \): дописать \( a>0,~ a \neq 1 \)</li>
-                    <li>\( \longleftarrow \): знать заранее \( a>0,~ a \neq 1 \)</li>
+                    <li><b>Превратить в 0:</b> дописать в системе \( a>0,~ a \neq 1 \).</li>
+                    <li><b>Расписать 0:</b> знать заранее \( a>0,~ a \neq 1 \).</li>
                 </ul>
             </li>
             <li>
                 \( \displaystyle a^{\log_a{b}} = b \) <br>
-                Равносильно если \(b>0,~a>0,~a \neq 1\)
                 <ul>
-                    <li>\( \longrightarrow \): дописать \( b>0,~a>0,~a \neq 1 \)</li>
-                    <li>\( \longleftarrow \): знать заранее \(b>0,~a>0,~a \neq 1\)</li>
-                </ul>
-            </li>
-            <li>
-                \( \displaystyle a^{\log_b{c}} = c^{\log_b{a}} \) <br>
-                Равносильно если \( \log_b{c} \), \( \log_b{a} \) не являются целыми числами <br>
-                \( \longrightarrow \):
-                <ul>
-                    <li>Если \( \log_b{a} \) целое число: дописать \(c>0\)</li>
-                    <li>Если \( \log_b{c} \) целое число: знать заранее \(a>0\)</li>
+                    <li><b>Свернуть в число:</b> дописать в системе \( b>0,~a>0,~a \neq 1 \).</li>
+                    <li><b>Расписать число:</b> знать заранее \(b>0,~a>0,~a \neq 1\).</li>
                 </ul>
             </li>
             <li>
                 \( \displaystyle \log_a{b} = \frac{\log_c{b}}{\log_c{a}} \) <br>
-                Равносильно если \( c>0,~c \neq 1 \)
                 <ul>
-                    <li>\( \longrightarrow \): знать заранее \(c>0,~c \neq 1\)</li>
-                    <li>\( \longleftarrow \): дописать \( c>0,~ c \neq 1 \)</li>
+                    <li><b>Перейти к новому основанию:</b> знать заранее \(c>0,~c \neq 1\)</li>
+                    <li><b>Свернуть:</b> дописать в системе \( c>0,~ c \neq 1 \)</li>
                 </ul>
+            </li>
+            <li>
+                \( \displaystyle a^{\log_b{c}} = c^{\log_b{a}} \) <br>
             </li>
             <li>
                 \( \displaystyle \log_a{b} \cdot \log_c{d} = \log_a{d} \cdot \log_c{b} \)
@@ -147,26 +143,23 @@
             <ol>
                 <li>
                     \( \sqrt[c]{a} \cdot \sqrt[c]{b} = \sqrt[c]{a \cdot b} \) <br>
-                    Равносильно если \( a \geq 0,~b \geq 0 \)
                     <ul>
-                        <li>\( \longrightarrow \): дописать \(a \geq 0,~ b \geq 0\)</li>
-                        <li>\( \longleftarrow \): знать заранее \(a \geq 0,~ b \geq 0\)</li>
+                        <li><b>Соединить:</b> дописать в системе \(a \geq 0,~ b \geq 0\).</li>
+                        <li><b>Разъединить:</b> знать заранее \(a \geq 0,~ b \geq 0\).</li>
                     </ul>
                 </li>
                 <li>
                     \(\displaystyle \frac{\sqrt[c]{a}}{\sqrt[c]{b}} = \sqrt[c]{\frac{a}{b}} \) <br>
-                    Равносильно если \( a \geq 0,~b \geq 0 \)
                     <ul>
-                        <li>\( \longrightarrow \): дописать \(a \geq 0,~ b \geq 0\)</li>
-                        <li>\( \longleftarrow \): знать заранее \(a \geq 0,~ b \geq 0\)</li>
+                        <li><b>Соединить:</b> дописать в системе \(a \geq 0,~ b \geq 0\).</li>
+                        <li><b>Разъединить:</b> знать заранее \(a \geq 0,~ b \geq 0\).</li>
                     </ul>
                 </li>
                 <li>
                     \( (\sqrt[b]{a})^b = a \) <br>
-                    Равносильно если \(a \geq 0\)
                     <ul>
-                        <li>\( \longrightarrow \): дописать \(a \geq 0 \)</li>
-                        <li>\( \longleftarrow \): знать заранее \(a \geq 0 \)</li>
+                        <li><b>Возвести в степень:</b> дописать в системе \(a \geq 0 \).</li>
+                        <li><b>Расписать число:</b> знать заранее \(a \geq 0 \).</li>
                     </ul>
                 </li>
                 <li>\( \sqrt[b]{a^b} = |a| \)</li>
