@@ -15,8 +15,14 @@
                 <li><a href="#1root">Корень нечётной степени</a></li>
             </ul>
         <h2><a name="frac"></a><a href="#begin">Дробь</a></h2>
-        <i>Определение:</i> \(\displaystyle \frac{a}{b} = a : b \).<br>
-        
+        <i>Определение:</i> \(\displaystyle \frac{a}{b} = c \Leftrightarrow 
+            \left\{
+                \begin{array}{l}
+                    b \cdot c = a \\
+                    b \neq 0
+                \end{array}
+            \right.
+        \)
         <ol>
             <li>
             \( \displaystyle \frac{a \cdot c}{b \cdot c} = \frac{a}{b} \) <br>
@@ -48,7 +54,7 @@
                     b>0
                 \end{array}
             \right.
-        \).
+        \)
             <ol>
             <li>\( \displaystyle \log_a{b^c}= c \cdot \log_a{b} \) <br>
                 <ul>
@@ -114,6 +120,8 @@
             </li>
         </ol>
         <h2><a name="pow"></a><a href="#begin">Степень</a></h2>
+            <i>Определение:</i>
+            \( \displaystyle a^b = \underbrace{a \cdot a \cdot \ldots \cdot a}_{b~раз} \)
             <ol>
                 <li>
                     \( a^b \cdot a^c = a^{b+c} \)
@@ -131,6 +139,13 @@
                 <li>\( \displaystyle a^{\frac{1}{b}} = \sqrt[b]{a} \)</li>
             </ol>
         <h2><a name="abs"></a><a href="#begin">Модуль</a></h2>
+            <i>Определение:</i>
+            \(
+                \begin{array}{l}
+                    |a|=a,~если~a \geq 0 \\
+                    |a|=-a,~если~a<0
+                \end{array}
+            \)
             <ol>
                 <li>\(|a| \geq 0\)</li>
                 <li>\( |a|=|-a| \)</li>
@@ -140,6 +155,19 @@
                 <li>\( |a| = |\sqrt[b]{a^b}| \)</li>
             </ol>
         <h2><a name="0root"></a><a href="#begin">Корень чётной степени</a></h2>
+            <i>Определение:</i>
+            \(
+                \sqrt[b]{a} = c \Leftrightarrow
+                \left\{
+                    \begin{array}{l}
+                        c^b = a \\
+                        c \geq 0 \\
+                        a \geq 0 \\
+                        b \in \mathbb{N} \\
+                        b ~\vdots~ 2
+                    \end{array}
+                \right.
+            \)
             <ol>
                 <li>
                     \( \sqrt[c]{a} \cdot \sqrt[c]{b} = \sqrt[c]{a \cdot b} \) <br>
@@ -166,6 +194,17 @@
                 <li>\( \sqrt[b]{\sqrt[c]{a}} = \sqrt[b \cdot c]{a} \)</li>
             </ol>
         <h2><a name="1root"></a><a href="#begin">Корень нечётной степени</a></h2>
+            <i>Определение:</i>
+            \(
+                \sqrt[b]{a} = c \Leftrightarrow
+                \left\{
+                    \begin{array}{l}
+                        c^b = a \\
+                        b \in \mathbb{N} \\
+                        b ~\not\mathop{\vdots}~ 2
+                    \end{array}
+                \right.
+            \)
             <ol>
                 <li>
                     \( \sqrt[c]{a} \cdot \sqrt[c]{b} = \sqrt[c]{a \cdot b} \)
