@@ -3,9 +3,10 @@
         <title>Переходы</title>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
     <body>
-        <h1><a name="begin"></a><a href="conspects.html">Равносильные переходы</a></h1>
+        <h1><a name="begin"></a><a href="index.html">Равносильные переходы</a></h1>
         <ul>
             <li><a href="#equal">\( \LARGE = \)</a></li>
             <li><a href="#notequal">\( \LARGE \neq \)</a></li>
@@ -14,38 +15,56 @@
         </ul>
         <h2><a name="equal"></a><a href="#begin">\( \Huge = \)</a></h2>
             <ol>
-                <li>
-                    \( \displaystyle a_n \cdot x^n + a_{n-1} \cdot x^{n-1} + \ldots
-                    + a_2 \cdot x^2 + a_1 \cdot x + a_0 = 0 \Leftrightarrow 
+                <li><a href="javascript:OpenList('list1')">
+                    \( 
+                    \begin{array}[t]{|l|} \hline
+                    \displaystyle a_n \cdot x^n + a_{n-1} \cdot x^{n-1} + \ldots
+                    + a_2 \cdot x^2 + a_1 \cdot x + a_0 = 0 \Leftrightarrow \\
+                    \Leftrightarrow a_n \cdot (x - x_1) \cdot(x - x_2) \cdot \ldots \cdot (x - x_m) = 0 \Leftrightarrow
                     \left[
                     \begin{array}{l}
                     x=x_1 \\
                     x=x_2 \\
                     \ldots \\
-                    x=x_n
+                    x=x_m
                     \end{array}
-                    \right.\)
+                    \right. \\ \hline \end{array} \)</a>
+                    <ul hidden="true" id="list1">
+                        <li>
+                            \(
+                                a \cdot x^2 + b \cdot x + c = 0
+                                \Leftrightarrow
+                                \left[
+                                    \begin{array}{l}
+                                        x = x_1 \\
+                                        x = x_2
+                                    \end{array}
+                                \right.
+                            \)
+                        </li>
+                    </ul>
                 </li>
-                <li>\( \displaystyle a_1 \cdot a_2 \cdot \ldots \cdot a_n = 0 \Leftrightarrow
+                <li><a href="javascript:OpenList('list2')">\( \begin{array}[t]{|l|} \hline
+                    \displaystyle a_1 \cdot a_2 \cdot \ldots \cdot a_n = 0 \Leftrightarrow
                     \left[
                         \begin{array}{l}
                             \left\{
                                 \begin{array}{l}
                                     a_1=0 \\
-                                    D(a_2),~D(a_3),~\ldots,~D(a_n)  
+                                    ограничения~из~a_2,~a_3, \ldots ,a_n  
                                 \end{array}
                             \right. \\
                             \left\{
                                 \begin{array}{l}
                                     a_2=0 \\
-                                    D(a_1),~D(a_3),~\ldots,~D(a_n)  
+                                    ограничения~из~a_1,~a_3, \ldots ,a_n  
                                 \end{array}
                             \right.\\
                             \ldots \\
                             \left\{
                                 \begin{array}{l}
                                     a_n=0 \\
-                                    D(a_1),~D(a_2),~\ldots,~D(a_{n-1})  
+                                    ограничения~из~a_1,~a_2, \ldots ,a_{n-1}  
                                 \end{array}
                             \right.
                         \end{array}
@@ -61,58 +80,180 @@
                                     a_n = 0
                                 \end{array}
                             \right. \\
-                            D(a_1),~D(a_2),~ \ldots,~ D(a_n)
+                            ограничения~из~a_1,~a_2, \ldots ,a_n
                         \end{array}
-                    \right.
-                    \)
+                    \right. \\ \hline \end{array}
+                    \)</a>
+                    <ul hidden="true" id="list2">
+                        <li>
+                            \(
+                                a \cdot b = 0
+                                \Leftrightarrow
+                                \left[
+                                    \begin{array}{l}
+                                        \left\{
+                                            \begin{array}{l}
+                                                a = 0 \\
+                                                ограничения~из~b
+                                            \end{array}
+                                        \right. \\
+                                        \left\{
+                                            \begin{array}{l}
+                                                b = 0 \\
+                                                ограничения~из~a
+                                            \end{array}
+                                        \right.
+                                    \end{array}
+                                \right. \Leftrightarrow
+                                \left\{
+                                    \begin{array}{l}
+                                        \left[
+                                            \begin{array}{l}
+                                                a = 0 \\
+                                                b = 0
+                                            \end{array}
+                                        \right.\\
+                                        ограничения~из~a,~b
+                                    \end{array}
+                                \right.
+                            \)
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    \( \displaystyle \frac{a}{b} = 0 \Leftrightarrow
+                <li><a href="javascript:OpenList('list3')">
+                    \(\begin{array}[t]{|l|} \hline \displaystyle \frac{a}{b} = \frac{c}{d} \Leftrightarrow
                     \left\{
                         \begin{array}{l}
-                            a = 0 \\
-                            b \neq 0
+                            a \cdot d = b \cdot c \\
+                            b \neq 0 \\
+                            d \neq 0
                         \end{array}
-                    \right.
-                    \)
+                    \right. \\ \hline \end{array}
+                    \)</a>
+                    <ul hidden="true" id="list3">
+                        <li>
+                            \( \displaystyle
+                                \frac{a}{b} = 0 \Leftrightarrow
+                                \left\{
+                                    \begin{array}{l}
+                                        a = 0 \\
+                                        b \neq 0
+                                    \end{array}
+                                \right.
+                            \)
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    \( \displaystyle \operatorname{monotone}{(a)} = \operatorname{monotone}{(b)}
+                <li><a href="javascript:OpenList('list4')">
+                    \(\begin{array}[t]{|l|} \hline \displaystyle \operatorname{МонотоннаяФункция}{(a)} = \operatorname{МонотоннаяФункция}{(b)}
                     \Leftrightarrow
                     \left\{
                         \begin{array}{l}
                             a=b \\
-                            a \in D(\operatorname{monotone})
+                            ограничение~на~a~или~b
                         \end{array}
-                    \right.
-                    \)
+                    \right. \\ \hline \end{array}
+                    \)</a>
+                    <ul hidden="true" id="list4">
+                        <li>
+                            \(
+                                (\not 1)^a = (\not 1)^b \Leftrightarrow
+                                a = b
+                            \)
+                        </li>
+                        
+                        <li>
+                            \(
+                                \log{a} = \log{b} \Leftrightarrow
+                                \left\{
+                                    \begin{array}{l}
+                                        a = b \\
+                                        a > 0
+                                    \end{array}
+                                \right.
+                            \)
+                        </li>
+                        <li>
+                            \(
+                                \sqrt[чёт]{a} = \sqrt[чёт]{b} \Leftrightarrow
+                                \left\{
+                                    \begin{array}{l}
+                                        a = b \\
+                                        a \geq 0
+                                    \end{array}
+                                \right.
+                            \)
+                        </li>
+                        <li>
+                            \(
+                                \sqrt[нечёт]{a} = \sqrt[нечёт]{b} \Leftrightarrow
+                                a = b
+                            \)
+                        </li>
+                        <li>
+                            \(
+                                a^{нечёт} = b^{нечёт} \Leftrightarrow
+                                a = b
+                            \)
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    \( \displaystyle \sqrt[2n]{a} = b 
+                <li><a href="javascript:OpenList('list5')">
+                    \(\begin{array}[t]{|l|} \hline \displaystyle \sqrt[чёт]{a} = b 
                     \Leftrightarrow
                     \left\{
                         \begin{array}{l}
-                            a = b^{2n} \\
+                            a = b^{чёт} \\
                             b \geq 0
                         \end{array}
-                    \right.
-                    \)
+                    \right. \\ \hline \end{array}
+                    \)</a>
+                    <ul hidden="true" id="list5">
+                        <li>
+                            \(
+                                \sqrt{a} = b \Leftrightarrow
+                                \left\{
+                                    \begin{array}{l}
+                                        a = b^2 \\
+                                        b \geq 0
+                                    \end{array}
+                                \right.
+                            \)
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    \( \displaystyle
-                    a_n \cdot \sin^n{x} + a_{n-1} \cdot \sin^{n-1}{x} \cdot \cos{x} +
-                    a_{n-2} \cdot \sin^{n-2} \cdot \cos^2{x} + \ldots
-                    + a_1 \cdot \sin{x} \cdot \cos^{n-1} + a_0 \cdot \cos^n{x} = 0
-                    \Leftrightarrow  \) <br><br> \(
-                    \Leftrightarrow a_n \cdot \operatorname{tg}^{n}{x} + a_{n-1} \cdot \operatorname{tg}^{n-1}{x} + \ldots
-                    + a_1 \cdot \operatorname{tg}{x} + a_0 = 0
-                    \)
+                    <a href="javascript:OpenList('list6')">
+                        \( \begin{array}[t]{|l|} \hline \displaystyle
+                        a_n \cdot \sin^n{x} + a_{n-1} \cdot \sin^{n-1}{x} \cdot \cos{x} +
+                        a_{n-2} \cdot \sin^{n-2} \cdot \cos^2{x} + \ldots
+                        + a_1 \cdot \sin{x} \cdot \cos^{n-1} + a_0 \cdot \cos^n{x} = 0
+                        \Leftrightarrow  \\
+                        \Leftrightarrow a_n \cdot \operatorname{tg}^{n}{x} + a_{n-1} \cdot \operatorname{tg}^{n-1}{x} + \ldots
+                        + a_1 \cdot \operatorname{tg}{x} + a_0 = 0 \\ \hline \end{array}
+                        \)
+                    </a>
+                    <ul hidden="true" id="list6">
+                        <li>
+                            \(
+                                a \cdot \sin{x} + b \cdot \cos{x} = 0 \Leftrightarrow
+                                a \cdot \operatorname{tg}{x} + b = 0
+                            \)
+                        </li>
+                        <li>
+                            \(
+                                a \cdot \sin^2{x} + b \cdot \sin{x} \cdot \cos{x} + c \cdot \cos^2{x} = 0 \Leftrightarrow
+                                a \cdot \operatorname{tg^2}{x} + b \cdot \operatorname{tg}{x} + c = 0
+                            \)
+                        </li>
+                    </ul>
                 </li>
+                <li></li>
             </ol>
         <h2><a name="notequal"></a><a href="#begin">\( \Huge \neq \)</a></h2>
             <ol>
                 <li>
-                    \(
+                    \( \begin{array}[t]{|l|} \hline
                     a_1 \cdot a_2 \cdot \ldots \cdot a_n \neq 0
                     \Leftrightarrow
                     \left\{
@@ -122,10 +263,24 @@
                             \ldots \\
                             a_n \neq 0
                         \end{array}
-                    \right.
+                    \right. \\ \hline \end{array}
                     \)
                 </li>
                 <li>
+                    <a href="javascript:OpenList('list7')">
+                        \(
+                            \begin{array}[t]{|l|} \hline \displaystyle
+                            \frac{a}{b} \neq \frac{c}{d} \Leftrightarrow
+                            \left\{
+                                \begin{array}{l}
+                                    a \cdot d \neq b \cdot c \\
+                                    b \neq 0 \\
+                                    d \neq 0
+                                \end{array}
+                            \right. \\ \hline \end{array}
+                        \)
+                    </a>
+                    <ul id="list7" hidden="true"><li>
                     \( \displaystyle
                     \frac{a}{b} \neq 0 \Leftrightarrow
                     \left\{
@@ -135,84 +290,242 @@
                         \end{array}
                     \right.
                     \)
+                    </li></ul>
                 </li>
-                <li>
-                    \(
-                    \operatorname{monotone}{(a)} \neq \operatorname{monotone}{(b)}
+                <li><a href="javascript:OpenList('list8')">
+                    \( \begin{array}[t]{|l|} \hline
+                    \operatorname{МонотоннаяФункция}{(a)} \neq \operatorname{МонотоннаяФункция}{(b)}
                     \Leftrightarrow
                     \left\{
                         \begin{array}{l}
                             a \neq b \\
-                            a \in D(\operatorname{monotone}) \\
-                            b \in D(\operatorname{monotone})
+                            ограничение~на~a \\
+                            ограничение~на~b
                         \end{array}
-                    \right.
-                    \)
+                    \right. \\ \hline \end{array}
+                    \)</a>
+                    <ul hidden="true" id="list8">
+                        <li>
+                            \(
+                                (\not 1)^a \neq (\not 1)^b \Leftrightarrow
+                                a \neq b
+                            \)
+                        </li>
+                        
+                        <li>
+                            \(
+                                \log{a} \neq \log{b} \Leftrightarrow
+                                \left\{
+                                    \begin{array}{l}
+                                        a \neq b \\
+                                        a > 0 \\
+                                        b > 0
+                                    \end{array}
+                                \right.
+                            \)
+                        </li>
+                        <li>
+                            \(
+                                \sqrt[чёт]{a} \neq \sqrt[чёт]{b} \Leftrightarrow
+                                \left\{
+                                    \begin{array}{l}
+                                        a \neq b \\
+                                        a \geq 0 \\
+                                        b \geq 0
+                                    \end{array}
+                                \right.
+                            \)
+                        </li>
+                        <li>
+                            \(
+                                \sqrt[нечёт]{a} \neq \sqrt[нечёт]{b} \Leftrightarrow
+                                a \neq b
+                            \)
+                        </li>
+                        <li>
+                            \(
+                                a^{нечёт} \neq b^{нечёт} \Leftrightarrow
+                                a \neq b
+                            \)
+                        </li>
+                    </ul>
                 </li>
             </ol>
         <h2><a name="more"></a><a href="#begin">\( \Huge > \normalsize,~ \Huge< \normalsize,~ \Huge \geq \normalsize,~ \Huge \leq \)</a></h2>
             <ol>
-                <li>
-                    \( \displaystyle
+                <li><a href="javascript:OpenList('list9')">
+                    \(\begin{array}[t]{|l|} \hline \displaystyle
                     \frac{(x-a_1)^{k_1} \cdot (x-a_2)^{k_2} \cdot \ldots \cdot (x-a_n)^{k_n}}
                     {(x-b_1)^{t_1} \cdot (x-b_2)^{t_2} \cdot \ldots \cdot (x-b_m)^{t_m}} \vee 0
-                    \stackrel{м.~и.}{\Longleftrightarrow}
-                    \)
+                    - По~методу~интервалов \\ \hline \end{array}
+                    \)</a>
+                    <ul id="list9" hidden="true">
+                        
+                        <li>
+                            \(
+                                \displaystyle
+                                \frac{1}{(x - a_1)^{k_1}\cdot(x - a_2)^{k_2}\cdot\ldots\cdot(x - a_n)^{k_n}} \vee 0
+                            \)
+                        </li>
+                        <li>
+                            \(
+                                \displaystyle
+                                (x - a_1)^{k_1}\cdot(x - a_2)^{k_2}\cdot\ldots\cdot(x - a_n)^{k_n} \vee 0
+                            \)
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    \(
-                    \operatorname{increasing}{(a)} \vee \operatorname{increasing}{(b)}
+                <li><a href="javascript:OpenList('list10')">
+                    \( \begin{array}[t]{|l|} \hline
+                    \operatorname{ВозрастающаяФункция}{(a)} \vee \operatorname{ВозрастающаяФункция}{(b)}
                     \Leftrightarrow
                     \left\{
                         \begin{array}{l}
                             a \vee b \\
-                            a \in D(\operatorname{increasing}) \\
-                            b \in D(\operatorname{increasing})
+                            ограничение~на~a \\
+                            ограничение~на~b
                         \end{array}
-                    \right.
-                    \)
+                    \right. \\ \hline \end{array}
+                    \)</a>
+                    <ul hidden="true" id="list10">
+                        <li>
+                            \(
+                                (>1)^a \vee (>1)^b \Leftrightarrow
+                                a \vee b
+                            \)
+                        </li>
+                        
+                        <li>
+                            \(
+                                \log_{>1}{a} \vee \log_{>1}{b} \Leftrightarrow
+                                \left\{
+                                    \begin{array}{l}
+                                        a \vee b \\
+                                        меньшее~из~a~и~b > 0
+                                    \end{array}
+                                \right.
+                            \)
+                        </li>
+                        <li>
+                            \(
+                                \sqrt[чёт]{a} \vee \sqrt[чёт]{b} \Leftrightarrow
+                                \left\{
+                                    \begin{array}{l}
+                                        a \vee b \\
+                                        меньшее~из~a~и~b \geq 0
+                                    \end{array}
+                                \right.
+                            \)
+                        </li>
+                        <li>
+                            \(
+                                \sqrt[нечёт]{a} \vee \sqrt[нечёт]{b} \Leftrightarrow
+                                a \vee b
+                            \)
+                        </li>
+                        <li>
+                            \(
+                                a^{нечёт} \vee b^{нечёт} \Leftrightarrow
+                                a \vee b
+                            \)
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    \(
-                    \operatorname{decreasing}{(a)} \vee \operatorname{decreasing}{(b)}
+                <li><a href="javascript:OpenList('list11')">
+                    \( \begin{array}[t]{|l|} \hline
+                    \operatorname{УбывающаяФункция}{(a)} \vee \operatorname{УбывающаяФункция}{(b)}
                     \Leftrightarrow
                     \left\{
                         \begin{array}{l}
                             a \land b \\
-                            a \in D(\operatorname{decreasing}) \\
-                            b \in D(\operatorname{decreasing})
+                            ограничение~на~a \\
+                            ограничение~на~b
                         \end{array}
-                    \right.
-                    \)
+                    \right. \\ \hline \end{array}
+                    \)</a>
+                    <ul hidden="true" id="list11">
+                        <li>
+                            \(
+                                (<1)^a \vee (<1)^b \Leftrightarrow
+                                a \land b
+                            \)
+                        </li>
+                        
+                        <li>
+                            \(
+                                \log_{<1}{a} \vee \log_{<1}{b} \Leftrightarrow
+                                \left\{
+                                    \begin{array}{l}
+                                        a \land b \\
+                                        меньшее~из~a~и~b > 0
+                                    \end{array}
+                                \right.
+                            \)
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    \( \displaystyle
+                <li><a href="javascript:OpenList('list12')">
+                    \( \begin{array}[t]{|l|} \hline \displaystyle
                     c \cdot ( \operatorname{increasing}{(a)} - \operatorname{increasing}{(b)} )^{\pm n} \vee 0
                     \Leftrightarrow
                     \left\{
                         \begin{array}{l}
                             c \cdot (a - b)^{\pm n} \vee 0  \\
-                            a \in D(\operatorname{increasing}) \\
-                            b \in D(\operatorname{increasing})
+                            a \in D(\operatorname{ВозрастающаяФункция}) \\
+                            b \in D(\operatorname{ВозрастающаяФункция})
                         \end{array}
-                    \right.
-                    \)
+                    \right. \\ \hline \end{array}
+                    \)</a>
+                    <ul id="list12" hidden="true">
+                        <li>
+                            \(  \displaystyle
+                                \frac{(\log_{>1}{a} - \log_{>1}{b})\cdot((>1)^c - (>1)^d)}
+                                {(\sqrt{x} - \sqrt{y})\cdot(z^{нечёт} - t^{нечёт})} \vee 0
+                                \Leftrightarrow
+                                \left\{
+                                    \begin{array}{l}
+                                        \displaystyle\frac{(a - b)\cdot(c - d)}
+                                        {(x - y)\cdot(z - t)} \vee 0 \\
+                                        a>0 \\
+                                        b>0 \\
+                                        x \geq 0 \\
+                                        y \geq 0
+                                    \end{array}
+                                \right.
+                            \)
+                        </li>
+                        <li>
+                            \(
+                                
+                            \)
+                        </li>
+                    </ul>
                 </li>
             </ol>
         <h2><a name="andor"></a><a href="#begin">\( \Huge \{ \normalsize,~ \Huge [  \)</a></h2>
             <ol>
                 <li>
-                \(
-                    \displaystyle false \Leftrightarrow  x \not \in \mathbb{R}
+                \( \begin{array}[t]{|l|} \hline
+                    \displaystyle ложь \Leftrightarrow  x \not \in \mathbb{R}
+                    \\ \hline \end{array}
                 \)
                 </li>
-                <li>
-                \(
-                    true \Leftrightarrow D(true)
-                \)
+                <li><a href="javascript:OpenList('list13')">
+                \( \begin{array}[t]{|l|} \hline
+                    истина \Leftrightarrow ограничения
+                    \\ \hline \end{array}
+                \)</a>
+                    <ul id="list13" hidden="true">
+                        <li>
+                            \(
+                                истина~без~ограничений \Leftrightarrow
+                                x \in \mathbb{R}
+                            \)
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                \(
+                \( \begin{array}[t]{|l|} \hline 
                     \left\{
                         \begin{array}{l}
                             A \\
@@ -220,11 +533,11 @@
                         \end{array}
                     \right.
                     \Leftrightarrow
-                    A
+                    A \\ \hline \end{array}
                 \)
                 </li>
                 <li>
-                \(
+                \(\begin{array}[t]{|l|} \hline
                     \left[
                         \begin{array}{l}
                             A \\
@@ -232,11 +545,11 @@
                         \end{array}
                     \right.
                     \Leftrightarrow
-                    A
+                    A \\ \hline \end{array}
                 \)
                 </li>
                 <li>
-                \(
+                \( \begin{array}[t]{|l|} \hline
                     \left\{
                         \begin{array}{l}
                             A \\
@@ -244,44 +557,44 @@
                         \end{array}
                     \right.
                     \Leftrightarrow
-                    x \not \in \mathbb{R}
+                    x \not \in \mathbb{R} \\ \hline \end{array}
                 \)
                 </li>
                 <li>
-                \(
+                \(\begin{array}[t]{|l|} \hline
                     \left\{
                         \begin{array}{l}
                             A \\
                             x \in \mathbb{R}
                         \end{array}
                     \right.
-                    \Leftrightarrow A
+                    \Leftrightarrow A \\ \hline \end{array}
                 \)
                 </li>
                 <li>
-                \(
+                \(\begin{array}[t]{|l|} \hline
                     \left[
                         \begin{array}{l}
                             A \\
                             x \not \in \mathbb{R}
                         \end{array}
                     \right.
-                    \Leftrightarrow A
+                    \Leftrightarrow A \\ \hline \end{array}
                 \)
                 </li>
                 <li>
-                \(
+                \(\begin{array}[t]{|l|} \hline
                     \left[
                         \begin{array}{l}
                             A \\
                             x \in \mathbb{R}
                         \end{array}
                     \right.
-                    \Leftrightarrow x \in \mathbb{R}
+                    \Leftrightarrow x \in \mathbb{R} \\ \hline \end{array}
                 \)
                 </li>
                 <li>
-                \(
+                \(\begin{array}[t]{|l|} \hline
                     \left\{
                         \begin{array}{l}
                             a = b \\
@@ -294,11 +607,11 @@
                             a = b \\
                             F(b)
                         \end{array}
-                    \right.
+                    \right. \\ \hline \end{array}
                 \)
                 </li>
                 <li>
-                \(
+                \(\begin{array}[t]{|l|} \hline
                     \left\{
                         \begin{array}{l}
                             A \Leftrightarrow B \\
@@ -311,11 +624,11 @@
                             A \Leftrightarrow B \\
                             B
                         \end{array}
-                    \right.
+                    \right. \\ \hline \end{array}
                 \)
                 </li>
                 <li>
-                \(
+                \(\begin{array}[t]{|l|} \hline
                     A \Leftrightarrow
                     \left[
                         \begin{array}{l}
@@ -339,11 +652,11 @@
                                 \end{array}
                             \right. \\
                         \end{array}
-                    \right.
+                    \right. \\ \hline \end{array}
                 \)
                 </li>
                 <li>
-                \(
+                \(\begin{array}[t]{|l|} \hline
                     \left\{
                         \begin{array}{l}
                             \left[
@@ -371,11 +684,11 @@
                             \end{array}
                         \right.
                         \end{array}
-                        \right.
+                        \right. \\ \hline \end{array}
                 \)
                 </li>
                 <li>
-                \(
+                \(\begin{array}[t]{|l|} \hline
                     \left[
                         \begin{array}{l}
                             \left\{
@@ -403,9 +716,9 @@
                             \end{array}
                         \right.
                         \end{array}
-                        \right.
+                        \right. \\ \hline \end{array}
                 \)
                 </li>
             </ol>
     </body>
-    
+</html>    
