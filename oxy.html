@@ -3,6 +3,7 @@
         <title>Координатная плоскость</title>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <h1><a name="begin"></a><a href="index.html">Координатная плоскость \(Oxy\)</a></h1>
@@ -17,37 +18,37 @@
                 ax+by+c=0
             \) &mdash; прямая
             </li>
-            <li>
+            <li><a href="javascript:OpenList('line')">
             \(
                 y=a(x-b)+c
-            \) &mdash; невертикальная прямая
-                <ul>
+            \) &mdash; невертикальная прямая</a>
+                <ul id="line" hidden="true">
                     <li>От \(a\) зависит угол наклона прямой</li>
                     <li>Содержит точку \((b;~c)\)</li>
                 </ul>
             </li>
-            <li>
+            <li><a href="javascript:OpenList('vert')">
             \(
                 x=a
-            \) &mdash; вертикальная прямая
-                <ul>
+            \) &mdash; вертикальная прямая</a>
+                <ul id="vert" hidden="true">
                     <li>Содержит точку \((a;~0)\)</li>
                 </ul>
             </li>
-            <li>
+            <li><a href="javascript:OpenList('parabole')">
             \(
                 y = a(x-b)^2 + c,~ a \neq 0
-            \) &mdash; парабола
-                <ul>
+            \) &mdash; парабола</a>
+                <ul id="parabole" hidden="true">
                     <li>От \(a\) зависит направление ветвей и ширина параболы</li>
                     <li>Вершина \( (b;~c) \)</li>
                 </ul>
             </li>
-            <li>
+            <li><a href="javascript:OpenList('angle')">
             \(
                 y = a|x-b|+c
-            \) &mdash; угол
-                <ul>
+            \) &mdash; угол</a>
+                <ul id="angle" hidden="true">
                     <li>От \(a\) зависит направление сторон и величина угла</li>
                     <li>Вершина \( (b;~c) \)</li>
                     <li>Левая сторона \(
@@ -68,20 +69,20 @@
                     \)</li>
                 </ul>
             </li>
-            <li>
+            <li><a href="javascript:OpenList('circle')">
             \(
                 (x-a)^2 + (y-b)^2 = c,~c>0
-            \) &mdash; окружность
-                <ul>
+            \) &mdash; окружность</a>
+                <ul id="circle" hidden="true">
                     <li>Центр \( (a;~b) \)</li>
                     <li>Радиус \( \sqrt{c} \)</li>
                 </ul>
             </li>
-            <li>
+            <li><a href="javascript:OpenList('hyperbole')">
             \( \displaystyle
                 y = \frac{a}{x-b} + c,~a \neq 0
-            \) &mdash; гипербола
-                <ul>
+            \) &mdash; гипербола</a>
+                <ul id="hyperbole" hidden="true">
                     <li>Центр \( (b;~c) \)</li>
                     <li>От \(a\) зависит положение ветвей и расстояние между ними</li>
                 </ul>
