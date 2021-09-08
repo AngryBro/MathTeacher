@@ -1,0 +1,106 @@
+<html lang="en">
+    <head>
+        <title>“еори€ веро€тностей</title>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1><a name="begin" href="index.html">“еори€ веро€тностей</a></h1>
+        <ul>
+            <li><a href="#def">ќпределени€</a></li>
+            <li><a href="#fea">—войства</a></li>
+        </ul>
+        <h2><a name="def" href="#begin">ќпределени€</a></h2>
+        <ol>
+            <li>
+                <b>»спытание</b> &ndash; действие в задаче.
+            </li>
+            <li>
+                <b>»сход</b> &ndash; неделимый гипотетический результат проведени€ испытани€.
+            </li>
+            <li>
+                <b>—обытие</b> &ndash; фактический результат проведени€ испытани€.
+            </li>
+            <li>
+                <b>Ѕлагопри€тный исход событи€</b> &ndash;
+                   исход испытани€, при котором происходит данное событие.
+            </li>
+            <a href="javascript:OpenList('svg1')"><li>
+                <b>—овместные событи€</b> &ndash; событи€, которые могут произойти одновременно. 
+            </li>
+            <li>
+                <b>Ќесовместные событи€</b> &ndash; событи€, которые не могут произойти одновременно. 
+            </li>
+            <li>
+                <b>«ависимые событи€</b> &ndash; наступление одного событи€ мен€ет веро€тность другого событи€.
+            </li>
+            <li>
+                <b>Ќезависимые событи€</b> &ndash; наступление одного событи€ не мен€ет веро€тность другого событи€. 
+            </li></a>
+            <div id="svg1" hidden="true">
+            <svg width="1000" height="300">
+                <text x="400" y="50" font-size="50" fill="black" font-family="Times New Roman">—обыти€</text>
+                <line x1="400" y1="60" x2="300" y2="100" stroke="black"></line>
+                <line x1="595" y1="60" x2="700" y2="100" stroke="black"></line>
+                <text x="200" y="130" font-size="40" fill="black" font-family="Times New Roman">Ќесовместные</text>
+                <text x="600" y="130" font-size="40" fill="black" font-family="Times New Roman">—овместные</text>
+                <line x1="650" y1="135" x2="580" y2="235" stroke="black"></line>
+                <line x1="750" y1="135" x2="850" y2="235" stroke="black"></line>
+                <text x="490" y="260" font-size="30" fill="black" font-family="Times New Roman">«ависимые</text>
+                <text x="780" y="260" font-size="30" fill="black" font-family="Times New Roman">Ќезависимые</text>
+                <line x1="300" y1="140" x2="530" y2="235" stroke="black"></line>
+                <rect width="1000" height="300" stroke="black" stroke-width="5" fill="none"></rect>
+                
+            </svg>
+            </div>
+            <li>
+                <b>¬еро€тность событи€</b> &ndash; число, равное отношению числа благопри€тных равновозможных исходов событи€, к числу всех равновозможных исходов событи€. 
+            </li>
+            <li>
+                \(\operatorname{P}{(A)} -\) веро€тность событи€ \(A\).
+            </li>
+            <li>
+                \(\overline A\) &ndash; событие противоположное событию \(A\).
+            </li>
+            <li>
+                \(A+B\) &ndash; событие, когда происходит хот€ бы одно из событий \(A,~B\).
+            </li>
+            <li>
+                \(A \cdot B\) &ndash; событие, когда происход€т сразу оба событи€ \(A,~B\).
+            </li>
+        </ol>
+        
+        <h2><a href="#begin" name="fea">—войства</a></h2>
+        <ol>
+            <li>
+                \(
+                    \operatorname{P}{(A)} = 1
+                \), если событие \(A\) точно произойдЄт.
+            </li>
+            <li>
+                \(
+                    \operatorname{P}{(A)} = 0
+                \), если событие \(A\) точно не произойдЄт.
+            </li>
+            <li>
+                \(
+                    \operatorname{P}{\left(\overline A\right)} = 
+                    1 - \operatorname{P}{(A)}.
+                \)
+            </li>
+            <li>
+                \(
+                    \operatorname{P}{(A+B)} = \operatorname{P}{(A)} +
+                    \operatorname{P}{(B)} - \operatorname{P}{(A \cdot B)}
+                \).
+            </li>
+            <li>
+                \(
+                    \operatorname{P}{(A \cdot B)} = 
+                    \operatorname{P}{(A)} \cdot \operatorname{P}{(B)}
+                \), если событи€ \(A,~B\) независимые.
+            </li>
+        </ol>
+    </body>
+</html>
