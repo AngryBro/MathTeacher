@@ -31,7 +31,7 @@
                 \(
                     \begin{array}[t]{|c|c|c|c|}
                         \hline
-                        \operatorname{ТригФункция} & \displaystyle \frac{\pi}{6}=30^{\circ} & \displaystyle \frac{\pi}{4}=45^{\circ} & \displaystyle \frac{\pi}{3}=60^{\circ} \\
+                        \operatorname{ТригонометрическаяФункция} & \displaystyle \frac{\pi}{6}=30^{\circ} & \displaystyle \frac{\pi}{4}=45^{\circ} & \displaystyle \frac{\pi}{3}=60^{\circ} \\
                         \hline
                         \sin & \displaystyle \frac{1}{2} & \displaystyle \frac{1}{\sqrt{2}} & \displaystyle \frac{\sqrt{3}}{2} \\
                         \hline 
@@ -58,14 +58,15 @@
         <h2><a name="algebra"></a><a href="#begin">Тригонометрия в алгебре</a></h2>
         <h4><a href="#algebra">Определения</a></h4>
         <ol>
-            <li>\( \sin{x} \) &ndash; ордината точки с числом \(x\) на числовой единичной окружности</li>
-            <li>\( \cos{x} \) &ndash; абсцисса точки с числом \(x\) на числовой единичной окружности</li>
+            <li>Число \(x\) на единичной числовой окружности находится в точке \((\cos{x};~\sin{x})\)</li>
             <li>\(\displaystyle  \operatorname{tg}{x} = \frac{\sin{x}}{\cos{x}} \)</li>
             <li>\(\displaystyle  \operatorname{ctg}{x} = \frac{\cos{x}}{\sin{x}}\)</li>
         </ol>
         <h4><a href="#algebra">Свойства</a></h4>
         <ol>
             <li>\(\displaystyle \sin^2{x} + \cos^2{x} = 1 \)</li>
+            <li value=1>\( \displaystyle \operatorname{tg^2}{x} + 1 = \frac{1}{ \cos^2{x}} \)</li>
+            <li value=1>\(\displaystyle \operatorname{ctg^2}{x}+1 = \frac{1}{\sin^2{x}} \)</li>
             <li>\(\displaystyle \sin{2x} = 2 \sin{x} \cos{x} \)</li>
             <li>\(\displaystyle \cos{2x} = \cos^2{x} - \sin^2{x} = 2 \cos^2{x} - 1 = 1 - 2 \sin^2{x} \)</li>
             <li value="3">\(\displaystyle \sin^2{x} = \frac{1-\cos{2x}}{2} \)</li>
@@ -76,11 +77,11 @@
                 Формула приведения.
                 <br>
                         \( \begin{array}[t]{|l|} \hline
-                        \displaystyle \operatorname{ТригонометрическаяФункция}{\left(\frac{n \cdot \pi}{2} \pm x\right)} = ~знак~\cdot \operatorname{НоваяТригонометрическаяФункция}{(x)} 
+                        \displaystyle \operatorname{ТригонометрическаяФункция}{\left(n \cdot ЧетвертьКруга \pm x\right)} = ~знак~\cdot \operatorname{НоваяТригонометрическаяФункция}{(x)} 
                         \\ \hline\end{array}\)
                 <br>
                 Знак определяется по определению тригонометрической функции, заменой \(x\) на острый угол.
-                Новая функция определяется исходя из того, где точка \(\displaystyle\frac{n \cdot \pi}{2}\):
+                Новая функция определяется исходя из того, где точка \(\displaystyle (n \cdot ЧетвертьКруга)\):
                 если она на вертикальной оси, то изначальная функция меняется на кофункцию, если на горизонтальной, то не меняется.
             </li>
         </ol>
@@ -94,9 +95,9 @@
         </ol>
         <h4><a href="#algebra">Поиск всех чисел в точках</a></h4>
         <ol>
-            <li>Точки \(A_1;~A_2;\ldots ;~A_n\) &ndash; серия, если \(\displaystyle \stackrel{\smile}{A_1 A_2}=\stackrel{\smile}{A_2 A_3}=\ldots=\stackrel{\smile}{A_{n-1} A_n}=\stackrel{\smile}{A_n A_1}= \frac{2\pi}{n} \)</li>
+            <li>Точки \(A_1;~A_2;\ldots ;~A_n\) &ndash; серия, если \(\displaystyle \stackrel{\smile}{A_1 A_2}=\stackrel{\smile}{A_2 A_3}=\ldots=\stackrel{\smile}{A_{n-1} A_n}=\stackrel{\smile}{A_n A_1}= \frac{1}{n}круга \)</li>
             <li>\(x_0 \in A_{i}\) </li>
-            <li>Все числа в серии: \(\displaystyle x = x_0 + \frac{2\pi k}{n},~k \in \mathbb{Z} \)</li>
+            <li>Все числа в серии: \(\displaystyle x = x_0 + \frac{1}{n}круга \cdot k,~k \in \mathbb{Z} \)</li>
         </ol>
     </body>
 </html>
