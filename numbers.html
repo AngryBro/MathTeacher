@@ -1,0 +1,195 @@
+<html lang="en">
+    <head>
+        <title>Теория чисел</title>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1><a href="index.html">Теория чисел</a></h1>
+        О том, как работают целые числа.
+        <h2>Определения</h2>
+        <ol>
+            <li>
+                
+                    \(a\) делится на \(d \Leftrightarrow a ~\vdots~ d \Leftrightarrow a = x \cdot d\)
+                
+            </li>
+            <li>
+                \(
+                    a\) не делится на \(d \Leftrightarrow a ~\not\vdots~ d \Leftrightarrow a \neq x \cdot d
+                \)
+            </li>
+            <li>
+                \( \left\{
+                        \begin{array}{l}
+                            a = q \cdot d + r \\ 
+                            0 \leq r \leq d-1 
+                        \end{array}
+                    \right.
+                            \Leftrightarrow
+                    
+                \)
+                \(a\) делится на \(d\) с остатком \(r\), \(q\) &ndash; целая часть
+            </li>
+            <li>
+                \(d~ -\) делитель числа \(a \Leftrightarrow a ~\vdots~ d\)   
+            </li>
+            <li>
+                \(\operatorname{НОД}{(a_1;~a_2;\ldots ;~a_n)} ~-\) наибольшее число, на которое делится каждое из чисел \(a_1,~a_2,\ldots ,~a_n\)
+            </li>
+            <li>
+                \(\operatorname{НОК}{(a_1;~a_2;\ldots ;~a_n)} ~-\) наименьшее число, которое делится на каждое из чисел \(a_1,~a_2,\ldots ,~a_n\)
+            </li>
+            <li>
+                Простое число &ndash; положительное число, имеющее ровно 2 различных натуральных делителя
+            </li>
+            <li>
+                Составное число &ndash; положительное число, имеющее более 2 различных натуральных делителей
+            </li>
+            <li>
+                \(a_1,~a_2,\ldots ,~a_n -\) взаимно простые числа \(\Leftrightarrow \operatorname{НОД}{(a_1;~a_2;\ldots ;~a_n)}=1\)
+            </li>
+            <li>
+                \(a \underset{d}{\equiv} c -\) числа \(a\) и \(c\) имеют равный остаток при делении на \(d\)
+            </li>
+        </ol>
+        <h2>Свойства</h2>
+        <ol>
+            <li>
+                \(
+                    a_1,~a_2,\ldots ,~a_n ~\vdots~ d \Rightarrow
+                    (a_1 \pm a_2 \pm\ldots \pm a_n) ~\vdots~ d
+                \)
+            </li>
+            <li>
+                \( \left\{
+                        \begin{array}{l}
+                            a_1,~a_2,\ldots ,~a_n ~\vdots~ d \\
+                            x ~\not\vdots~ d
+                        \end{array}
+                    \right. \Rightarrow
+                    (a_1 \pm a_2 \pm\ldots \pm a_n \pm x) ~\not\vdots~d
+                \)
+            </li>
+            <li>
+                \(
+                    a_i ~\vdots~ d \Rightarrow
+                    (a_1 \cdot a_2 \cdot\ldots \cdot a_n) ~\vdots~d
+                \)
+            </li>
+
+            <li>
+                \(
+                    a \underset{d}{\equiv} c \Rightarrow
+                    (a-c) ~\vdots~ d
+                \)
+            </li>
+            <li>
+                \(
+                    \operatorname{НОД}{(a;~b)} \cdot \operatorname{НОК}{(a;~b)} = a \cdot b
+                \)
+            </li>
+            <li>
+                \(
+                    b ~\vdots~ a_1,~a_2,\ldots ,~a_n \Rightarrow
+                    b ~\vdots~ \operatorname{НОК}{(a_1;~a_2;\ldots ;~a_n)}
+                \)
+            </li>
+            <li>
+                \(
+                    \left\{
+                        \begin{array}{l}
+                            (a \cdot c ) ~\vdots~ d \\
+                            \operatorname{НОД}{(c;~d)} = 1
+                        \end{array}
+                    \right. \Rightarrow
+                    a ~\vdots~ d
+                \)
+            </li>
+            <li>
+                \(
+                    \left\{
+                        \begin{array}{l}
+                            a = p_1^{\gamma_1} \cdot p_2^{\gamma_2} \cdot\ldots
+                            \cdot p_n^{\gamma_n} \\
+                            p_i - различные ~простые ~числа \\
+                            \gamma_i - натуральные~ показатели
+                        \end{array}
+                    \right.
+                \)
+            </li>
+            <li>
+                \(
+                    
+                            a = p_1^{\gamma_1} \cdot p_2^{\gamma_2} \cdot\ldots
+                            \cdot p_n^{\gamma_n} 
+                            
+                         \Rightarrow 
+                         
+                         \left\{
+                            \begin{array}{l}
+                               Количество~всех~делителей ~a~ равно~
+                    d(a)=(\gamma_1 +1)\cdot (\gamma_2 + 1)\cdot\ldots\cdot (\gamma_n + 1)\\
+                               Произведение~всех ~делителей~a~равно ~ a^{\frac{d(a)}{2}}      
+                            \end{array}
+                        \right.
+                         
+                         
+                \)
+            </li>
+            
+        </ol>
+        <h2>Признаки</h2>
+        <ol>
+            <li>
+                \(
+                    a ~\not\vdots\) любое число \(\in [2;~\sqrt{a}] \Rightarrow
+                    a -\) простое
+                
+            </li>
+            <li>
+                \(
+                    \left\{
+                        \begin{array}{l}
+                            a = b \cdot c \\
+                            b>1 \\
+                            c > 1 
+                        \end{array}
+                    \right. \Rightarrow
+                    a -
+                \) составное
+            </li>
+            <li>
+                \(
+                    (a-c) ~\vdots~ d \Rightarrow
+                    a \underset{d}{\equiv} c
+                \)
+            </li>
+            <li><a href="javascript:OpenList('div')">
+                \(
+                    a \underset{2^k \cdot 5^m}{\equiv} последние~\operatorname{max}{(k;~m)}~цифр~a
+                \)</a>
+                <ul id="div" hidden="true">
+                    <li>
+                        \(
+                            a \underset{2; 5; 10}{\equiv} последняя~цифра~a
+                        \)
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                \(
+                    a \underset{3; 9}{\equiv} сумма~цифр~a
+                \)
+            </li>
+            <li>
+                \(
+                    a \underset{11}{\equiv} знакопеременная~сумма~цифр~a
+                \)
+            </li>
+            
+        </ol>
+    </body>
+</html>
