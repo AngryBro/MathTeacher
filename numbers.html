@@ -82,40 +82,49 @@
             </li>
             <li>
                 \(
-                    a_i ~\vdots~ d \Rightarrow
-                    (a_1 \cdot a_2 \cdot\ldots \cdot a_n) ~\vdots~d
+                 \left\{
+                        \begin{array}{l}
+                            (a_1 \cdot a_2 \cdot \ldots \cdot a_n) ~\not\vdots~ p
+                            \Leftrightarrow
+                            a_1,~ a_2 , \ldots ,~ a_n ~\not\vdots~p
+                            \\
+                            p - ~простое
+                        \end{array}
+                    \right. 
+                
+                     
+                    
+                    
                 \)
             </li>
             <li>
+                <a href="javascript:OpenList('equiv')">Свойства \( \Large \equiv \)</a>
+                <ol id="equiv" hidden="true">
+                    <li>
                 \(
-                    a \underset{d}{\equiv} c \Rightarrow
+                    a \underset{d}{\equiv} c \Leftrightarrow
                     (a-c) ~\vdots~ d
                 \)
-            </li>
-            <li>
+                    </li>
+                    <li>
                 \(
-                    \left\{
-                        \begin{array}{l}
-                            a \equiv b \\
-                            c \equiv d
-                        \end{array}
-                    \right. \Rightarrow
-                    a+c \equiv b+d 
+                    a \underset{d}{\equiv} c \Leftrightarrow
+                    a \underset{d}{\equiv} c+d \cdot x
                 \)
-            </li>
-            <li>
+                    </li>
+                    <li>
                 \(
-                    \left\{
-                        \begin{array}{l}
-                            a \equiv b \\
-                            c \equiv d
-                        \end{array}
-                    \right. \Rightarrow
-                    a \cdot c \equiv b \cdot d 
+                    a \underset{d}{\equiv} c \Leftrightarrow
+                    a + x \underset{d}{\equiv} c+x
                 \)
-            </li>
-            
-            <li>
+                    </li>
+                    <li>
+                \(
+                    a \underset{d}{\equiv} c \Leftrightarrow
+                    a \cdot x \underset{d}{\equiv} c \cdot x
+                \)
+                    </li>
+                    <li>
                 \(
                     \left\{
                         \begin{array}{l}
@@ -125,7 +134,34 @@
                     \right. \Rightarrow
                     a \underset{d}{\equiv} b 
                 \)
+                    </li>
+                    <li>
+                \(
+                    \left\{
+                        \begin{array}{l}
+                            a \equiv b \\
+                            c \equiv d
+                        \end{array}
+                    \right. \Rightarrow
+                    a+c \equiv b+d 
+                \)
+                    </li>
+                    <li>
+                \(
+                    \left\{
+                        \begin{array}{l}
+                            a \equiv b \\
+                            c \equiv d
+                        \end{array}
+                    \right. \Rightarrow
+                    a \cdot c \equiv b \cdot d 
+                \)
+                    </li>
+                </ol>
             </li>
+            
+            
+            
             <li>
                 \(
                     \operatorname{НОД}{(a;~b)} \cdot \operatorname{НОК}{(a;~b)} = a \cdot b
@@ -200,12 +236,6 @@
                     \right. \Rightarrow
                     a -
                 \) составное
-            </li>
-            <li>
-                \(
-                    (a-c) ~\vdots~ d \Rightarrow
-                    a \underset{d}{\equiv} c
-                \)
             </li>
             <li><a href="javascript:OpenList('div')">
                 \(
