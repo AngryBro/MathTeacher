@@ -69,6 +69,16 @@
             <li>
                 \(A \cdot B\) &ndash; событие, когда происходят сразу оба события \(A,~B\).
             </li>
+            <li>
+                \(\large 1\) &ndash; событие, которое точно происходит.
+            </li>
+            <li>
+                \(\large 0\) &ndash; событие, которое точно не происходит.
+            </li>
+            <li>
+                \(C_n^k\) &ndash; количество вариантов выбрать \(k\) элементов из \(n\).
+            </li>
+            
         </ol>
         
         <h2><a href="#begin" name="fea">Свойства</a></h2>
@@ -76,13 +86,13 @@
             <li>\( 0 \leq \operatorname{P}{(A)} \leq 1 \).</li>
             <li>
                 \(
-                    \operatorname{P}{(A)} = 1
-                \), если событие \(A\) точно произойдёт.
+                    \operatorname{P}{\left(\large 1 \normalsize \right)} = 1
+                \)
             </li>
             <li>
                 \(
-                    \operatorname{P}{(A)} = 0
-                \), если событие \(A\) точно не произойдёт.
+                    \operatorname{P}{\left(\large 0 \normalsize \right)} = 0
+                \)
             </li>
             <li>
                 \(
@@ -101,6 +111,11 @@
                     \operatorname{P}{(A \cdot B)} = 
                     \operatorname{P}{(A)} \cdot \operatorname{P}{(B)}
                 \), если события \(A,~B\) независимые.
+            </li>
+            <li>
+                \(
+                    C_n^k = \displaystyle \frac{n!}{k! \cdot (n-k)!}.
+                \)
             </li>
             <li>
                 \(
