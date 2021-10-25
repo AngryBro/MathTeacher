@@ -219,5 +219,88 @@
                  \( 1 \cdot 2 \cdot 4 \cdot 7 \cdot 27 = 1512. \)<br>
                  <i>Ответ:</i> да.
             </div>
+            <h3>Задача 5</h3>
+            Красный карандаш стоит 17 рублей, синий — 13 рублей. Нужно купить карандаши, имея всего 495
+            <br>рублей и соблюдая дополнительное условие: число синих карандашей не должно отличаться от
+            <br>числа красных карандашей больше чем на пять.
+            <br><a href="javascript:OpenList('task5a')">а) Можно ли купить при таких условиях 32 карандаша?</a>
+            <div id="task5a" hidden="true"><br>
+            <i>Решение:</i>
+            <br><br>
+            
+            Купили 16 синих и 16 красных карандашей.<br>
+            Потратили \( 16 \cdot 13 + 16 \cdot 17 = 480 \leq 495 \) рублей.<br>
+            Число синих отличается от числа красных на \(0 \leq 5\).<br>
+            Всего 32 карандаша.<br>
+            <i>Ответ:</i> да.<br><br></div>
+            <br><a href="javascript:OpenList('task52')">б) Можно ли купить при таких условиях 35 карандашей?</a>
+            <div id="task52" hidden="true"><br>
+            <i>Решение:</i><br><br>
+            
+            Предположим можно.<br>
+            Купили \(r\) красных и \(b\) синих карандашей.<br>
+            Потратили \(13b+17r \leq 495\) рублей.<br>
+            \(b-r \leq 5;~r+b=35.\)<br>
+            \( b=35-r;~~ 
+                \left\{
+                    \begin{array}{l}
+                        (35-r)-r \leq 5 \\
+                        13(35-r)+17r \leq 495 
+                    \end{array}
+                \right. \Rightarrow
+                \left\{
+                    \begin{array}{l}
+                        -2r \leq -30 \\
+                        4r + 455 \leq 495 
+                    \end{array}
+                \right. \Rightarrow \)<br> \( \Rightarrow
+                \left\{
+                    \begin{array}{l}
+                        r \geq 15 \\
+                        r \leq 10 
+                    \end{array}
+                \right. \Rightarrow 15 \leq r \leq 10 \Rightarrow 15 \leq 10.
+            \) Противоречие.<br>
+            <i>Ответ:</i> нет.<br><br></div>
+            <br><a href="javascript:OpenList('task53')">в) Какое наибольшее число карандашей можно купить при таких условиях?</a>
+ 
+            <div id="task53" hidden="true"><br>
+            <i>Решение:</i>
+            <br><br>
+            
+            Оценка:<br>
+            Купили \(r\) красных и \(b\) синих карандашей.<br>
+            Всего купили \(x\) карандашей.<br>
+            Потратили \(13b+17r \leq 495\) рублей.<br>
+            \(b-r \leq 5;~r+b=x; ~~x \in \mathbb{Z}.\)<br>
+            \( b=x-r;~~ 
+                \left\{
+                    \begin{array}{l}
+                        (x-r)-r \leq 5 \\
+                        13(x-r)+17r \leq 495 
+                    \end{array}
+                \right. \Rightarrow
+                \left\{
+                    \begin{array}{l}
+                        -2r \leq 5-x \\
+                        4r + 13x \leq 495 
+                    \end{array}
+                \right. \Rightarrow \)<br> \( \Rightarrow
+                \left\{
+                    \begin{array}{l}
+                        4r \geq 2x-10 \\
+                        4r \leq 495-13x 
+                    \end{array}
+                \right. \Rightarrow 2x-10 \leq 4r \leq 495-13x \Rightarrow
+                2x-10 \leq 495-13x \Rightarrow\)<br>\(\Rightarrow
+                15x \leq 505 \Rightarrow x \leq 33\frac{2}{3} \Rightarrow x \leq 33.\)<br>
+                <br>Пример:<br>
+                Купили 17 синих и 16 красных карандашей.<br>
+                Потратили \( 17 \cdot 13 + 16 \cdot 17 = 493 \leq 495 \) рубля.<br>
+                Число синих отличается от числа красных на \(1 \leq 5\).<br>
+                Всего 33 карандаша.<br>
+                <i>Ответ:</i> 33.
+                </div>
+               
 	</body>
 </html>
