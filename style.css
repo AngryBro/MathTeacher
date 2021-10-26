@@ -18,3 +18,12 @@ a:hover {
 .bl {
     color: blue;
 }
+.lidash {
+    list-style-type:  'g';
+}
+.bold {
+    font-weight: bold;
+}
+.normal {
+    font-weight: normal;
+}
