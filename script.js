@@ -17,3 +17,13 @@ function CloseLists(id1, id2, id3) {
         lists[i].hidden = true;
     }
 }
+
+function Bold(id) {
+    var span = document.getElementById(id);
+    if(span.getAttribute('class') == "normal") {
+        span.setAttribute("class","bold");
+    }
+    else {
+        span.setAttribute("class","normal");
+    }
+}
