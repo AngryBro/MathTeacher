@@ -1,0 +1,144 @@
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet"></link>
+		<title>Координаты Oxyz</title>
+		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body>
+		<h1><a href="index.html">Координатное пространство \(Oxyz\)</a></h1>
+		<ul>
+			<li><a>Справка по теории матриц</a></li>
+			<li><a>Векторы</a></li>
+			<li><a>Уравнения прямой</a></li>
+			<li><a>Уравнение плоскости</a></li>
+			<li><a>Углы</a></li>
+			<li><a>Расстояния</a></li>
+		</ul>
+		<h2><a>Справка по теории матриц</a></h2>
+		<h3>Определения</h3>
+		<ol>
+			<li>
+				Матрица &ndash; прямоугольная таблица чисел.<br>
+				Обозначение: 
+				\(
+					A =
+					\left(
+						\begin{array}{c}
+							a_{11} & a_{12} & a_{13} & \ldots & a_{1n} \\
+							a_{21} & a_{22} & a_{23} & \ldots & a_{2n} \\
+							\ldots & \ldots & \ldots & \ldots & \ldots \\
+							a_{m1} & a_{m2} & a_{m3} & \ldots & a_{mn} \\
+						\end{array}
+					\right)
+				\)<br>
+				\(A ~-\) матрица \(m \times n\).
+			</li>
+			<li>
+				\( |A| ~- \) определитель квадратной матрицы \(A\).
+			</li>
+			<li>
+				\(
+					\left(
+						\begin{array}{c}
+							a_1 \\
+							a_2 \\
+							a_3
+						\end{array}
+					\right)
+				\) &ndash; матрица \(3 \times 1\), используемая для обозначения координат
+				точек и векторов.
+			</li>
+		</ol>
+		<h3>Свойства</h3>
+		<ol>
+			<li>
+				\(
+					\left(
+						\begin{array}{c}
+							a_1 \\
+							a_2 \\
+							a_3
+						\end{array}
+					\right) \pm 
+					\left(
+						\begin{array}{c}
+							b_1 \\
+							b_2 \\
+							b_3
+						\end{array}
+					\right) = 
+					\left(
+						\begin{array}{c}
+							a_1 \pm b_1 \\
+							a_2 \pm b_2 \\
+							a_3 \pm b_3
+						\end{array}
+					\right)
+				\)
+			</li>
+			<li>
+				\(
+					b \cdot \left(
+						\begin{array}{c}
+							a_1 \\
+							a_2 \\
+							a_3
+						\end{array}
+					\right) = 
+					\left(
+						\begin{array}{c}
+							b \cdot a_1 \\
+							b \cdot a_2 \\
+							b \cdot a_3
+						\end{array}
+					\right)
+				\)
+			</li>
+			<li>
+				\(
+					\left|
+						\begin{array}{c}
+							a & b \\
+							c & d
+						\end{array}
+					\right| = ad - bc.
+				\)
+			</li>
+			<li>
+				\(
+					\left|
+						\begin{array}{c}
+							a & b & c \\
+							d & e & f \\
+							g & h & i 
+						\end{array}
+					\right| =
+					+a \cdot
+					\left|
+						\begin{array}{c}
+							e & f \\
+							h & i
+						\end{array}
+					\right|
+					-d \cdot
+					\left|
+						\begin{array}{c}
+							b & c \\
+							h & i
+						\end{array}
+					\right|
+					+g \cdot
+					\left|
+						\begin{array}{c}
+							b & c \\
+							e & f
+						\end{array}
+					\right|.
+				\)
+			</li>
+			<li>
+				
+			</li>
+		</ol>
+	</body>
+</html>
