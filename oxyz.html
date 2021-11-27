@@ -2,6 +2,7 @@
 	<head>
 		<link href="style.css" rel="stylesheet"></link>
 		<title>Координаты Oxyz</title>
+		<script src="script.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	<body>
@@ -136,8 +137,38 @@
 					\right|.
 				\)
 			</li>
+		</ol>
+		<h2>Точка</h2>
+		<ol>
 			<li>
-				
+				Точка \(A\) имеет координаты \(x,~y,~z\) записывается так:
+				\( A = 
+					\left(
+						\begin{array}{c}
+							x \\
+							y \\
+							z
+						\end{array}
+					\right)
+				\).
+			</li>
+			<li><a href="javascript:Openlist('point1')">
+				\(
+					\left\{
+						\begin{array}{l}
+							B \in AC \\
+							AB : BC = m:n
+						\end{array}
+					\right. \Rightarrow
+					B = \displaystyle\frac{1}{m+n}( n \cdot A + m \cdot C). 
+				\)</a>
+				<ul id="point1" hidden="true">
+					<li>
+						\(B\) &ndash; середина \(AC \Rightarrow
+							B = \displaystyle\frac{1}{2}(A+C).
+						\)  
+					</li>
+				</ul>
 			</li>
 		</ol>
 	</body>
