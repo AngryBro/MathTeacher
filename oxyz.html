@@ -231,6 +231,7 @@
 		<a href="javascript:OpenList('line')">Уравнения прямой \(a:~~~
 		\displaystyle\frac{x-a_1}{b_1} = \frac{y-a_2}{b_2} = \frac{z-a_3}{b_3}.
 		\)</a>
+		<ul>
 		<ul id="line" hidden="true">
 			<li>
 				Если \(b = \begin{pmatrix} 0\\b_2\\b_3 \end{pmatrix}\), то 
@@ -250,7 +251,7 @@
 				\end{cases}
 				\).
 			</li>
-		</ul>
+		</ul></ul>
 		<h2><a>Уравнение плоскости</a></h2>
 		\(\alpha ~-\) плоскость, \(A \in \alpha,~~X=
 		\begin{pmatrix} x\\y\\z \end{pmatrix} \in \alpha.
@@ -272,5 +273,69 @@
 			</li>
 		</ol>
 		<h2><a>Углы</a></h2>
+		<ol>
+			<li>
+				Угол между прямой \(m\) и прямой \(n\).<br>
+				\(
+					\cos{\angle(m,n)} = \displaystyle\frac{
+					\left|\overrightarrow{m}\cdot\overrightarrow{n}\right|}
+					{\left|\overrightarrow{m}\right|\cdot\left|\overrightarrow{n}\right|}
+				\).
+			</li>
+			<li>
+				Угол между прямой \(m\) и плоскостью \(\alpha\) с нормалью \(\overrightarrow{n}\).<br>
+				\(
+					\sin{\angle(m,\alpha)} = \displaystyle\frac{
+					\left|\overrightarrow{m}\cdot\overrightarrow{n}\right|}
+					{\left|\overrightarrow{m}\right|\cdot\left|\overrightarrow{n}\right|}
+				\).
+			</li>
+			<li>
+				Угол между плоскостью \(\alpha\) и плоскостью \(\beta\) с нормалями \(\overrightarrow{m}\) и \(\overrightarrow{n}\).<br>
+				\(
+					\cos{\angle(\alpha,\beta)} = \displaystyle\frac{
+					\left|\overrightarrow{m}\cdot\overrightarrow{n}\right|}
+					{\left|\overrightarrow{m}\right|\cdot\left|\overrightarrow{n}\right|}
+				\).
+			</li>
+		</ol>
+		<h2><a>Расстояния</a></h2>
+		<ol>
+			<li>
+				Расстояние от точки \(A\) до точки \(B\).<br>
+				\(\rho(A,B) = \left| \overrightarrow{AB} \right|\).
+			</li>
+			<li>
+				Расстояние от точки \(A\) до прямой \(a \ni B\).<br>
+				\(\displaystyle\rho(A,a) = \sqrt{\overrightarrow{BA}^2 - \frac{
+				\left(\overrightarrow{BA}\cdot\overrightarrow{a}\right)^2}
+				{\overrightarrow{a}^2}}\).
+			</li>
+			<li>
+				Расстояние от точки \(A\) до плоскости \(\alpha\) с уравнением 
+				\(f\begin{pmatrix} x\\y\\z \end{pmatrix} =0\) и нормалью \(\overrightarrow{n}\).<br>
+				\(\rho(A,\alpha) = \displaystyle 
+					\frac{|f(A)|}
+					{\left|\overrightarrow{n}\right|}
+				\).
+			</li>
+			<li>
+				Расстояние от прямой \(a \ni A\) до прямой \(b\).<br>
+				Если \(a \parallel b,~~~\rho(a,b)=\rho(A,b)\).<br>
+				Если \(a \not\parallel b,~a \subset \alpha \parallel b,~
+				X = \begin{pmatrix} x\\y\\z\end{pmatrix},~\)
+				уравнение \(\alpha~~~\begin{vmatrix} \overrightarrow{AX}
+				& \overrightarrow{a} & \overrightarrow{b} \end{vmatrix}=0,~~~
+				\rho(a,b)=\rho(\alpha,b)\).
+			</li>
+			<li>
+				Расстояние от прямой \(a \ni A\) до плоскости \(\alpha\parallel a\).<br>
+				\(\rho(a,\alpha) = \rho(A,\alpha)\).
+			</li>
+			<li>
+				Расстояние от плоскости \(\alpha \ni A\) до плоскости \(\beta\parallel \alpha\).<br>
+				\(\rho(\alpha,\beta) = \rho(A,\beta)\).
+			</li>
+		</ol>
 	</body>
 </html>
