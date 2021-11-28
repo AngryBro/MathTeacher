@@ -109,30 +109,30 @@
 				\(
 					\left|
 						\begin{array}{c}
-							a & b & c \\
-							d & e & f \\
-							g & h & i 
+							a_1 & b_1 & b_2 \\
+							a_2 & b_3 & b_4 \\
+							a_3 & b_5 & b_6 
 						\end{array}
 					\right| =
-					+a \cdot
+					+a_1 \cdot
 					\left|
 						\begin{array}{c}
-							e & f \\
-							h & i
+							b_3 & b_4 \\
+							b_5 & b_6
 						\end{array}
 					\right|
-					-d \cdot
+					-a_2 \cdot
 					\left|
 						\begin{array}{c}
-							b & c \\
-							h & i
+							b_1 & b_2 \\
+							b_5 & b_6
 						\end{array}
 					\right|
-					+g \cdot
+					+a_3 \cdot
 					\left|
 						\begin{array}{c}
-							b & c \\
-							e & f
+							b_1 & b_2 \\
+							b_3 & b_4
 						\end{array}
 					\right|.
 				\)
@@ -171,5 +171,85 @@
 				</ul>
 			</li>
 		</ol>
+		<h2><a>Вектор</a></h2>
+		<ol>
+			<li>
+				Вектор с началом в точке \(A\) и концом в точке \(B\)
+				записывается так: \(\overrightarrow{AB}\).
+			</li>
+			<li>
+				Вектор \(\overrightarrow{AB}\) имеет координаты \(x,~y,~z\):
+				\(~~~\overrightarrow{AB} =
+					\begin{pmatrix}
+						x \\
+						y \\
+						z
+					\end{pmatrix}
+				\).
+			</li>
+			<!--li>
+				\(
+					A = \begin{pmatrix} a_1\\a_2\\a_3 \end{pmatrix},~
+					B = \begin{pmatrix} b_1\\b_2\\b_3 \end{pmatrix}:
+					~~~
+					\overrightarrow{AB} = 
+					\begin{pmatrix} b_1\\b_2\\b_3 \end{pmatrix} - 
+					\begin{pmatrix} a_1\\a_2\\a_3 \end{pmatrix} =
+					\begin{pmatrix} b_1-a_1\\b_2-a_2\\b_3-a_3 \end{pmatrix}
+				\).
+			</li-->
+			<li>
+				\(\overrightarrow{AB} = B - A\).
+			</li>
+			<li>
+				\(\overrightarrow{a} ~~||~~ b \cdot \overrightarrow{a}\).
+			</li>
+			<li> 
+				Длина вектора: \(~~~\left|\begin{pmatrix} x\\y\\z \end{pmatrix}\right| =
+				\sqrt{x^2+y^2+z^2}\).
+			</li>
+			<li>
+				Скалярное произведение векторов: \(
+				~~~ \begin{pmatrix} x_1\\y_1\\z_1 \end{pmatrix} \cdot
+				\begin{pmatrix} x_2\\y_2\\z_2 \end{pmatrix} =
+				x_1 \cdot x_2 + y_1 \cdot y_2 + z_1 \cdot z_2.
+				\)
+			</li>
+			<li>
+				\(
+					\cos{\angle\left(\overrightarrow{m},\overrightarrow{n} \right)} =
+					\displaystyle\frac{\overrightarrow{m} \cdot \overrightarrow{n}}
+					{\left|\overrightarrow{m}\right| \cdot \left|\overrightarrow{n}\right|}
+				\).
+			</li>
+		</ol>
+		<h2><a>Уравнения прямой</a></h2>
+		\(a ~-\) прямая, \(A = \begin{pmatrix} a_1\\a_2\\a_3 \end{pmatrix}
+		\in a,~~~a ~||~ \overrightarrow{b}=
+		\begin{pmatrix} b_1\\b_2\\b_3 \end{pmatrix}
+		~~-\) направляющий вектор прямой \(a\).<br><br>
+		<a href="javascript:OpenList('line')">Уравнения прямой \(a:~~~
+		\displaystyle\frac{x-a_1}{b_1} = \frac{y-a_2}{b_2} = \frac{z-a_3}{b_3}.
+		\)</a>
+		<ul id="line" hidden="true">
+			<li>
+				Если \(b = \begin{pmatrix} 0\\b_2\\b_3 \end{pmatrix}\), то 
+				уравнения прямой \(a ~:~~~
+				\begin{cases}
+					\displaystyle\frac{y-a_2}{b_2} = \frac{z-a_3}{b_3} \\
+					x = a_1
+				\end{cases}
+				\).
+			</li>
+			<li>
+				Если \(b = \begin{pmatrix} 0\\0\\b_3 \end{pmatrix}\), то 
+				уравнения прямой \(a ~:~~~
+				\begin{cases}
+					x = a_1 \\
+					y = a_2
+				\end{cases}
+				\).
+			</li>
+		</ul>
 	</body>
 </html>
