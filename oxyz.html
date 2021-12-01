@@ -214,52 +214,72 @@
 			</li>
 		</ol>
 		<h2><a href="#begin" name="lines">Уравнения прямой</a></h2>
-		\(a ~-\) прямая, \(A = \begin{pmatrix} a_1\\a_2\\a_3 \end{pmatrix}
-		\in a,~~~a \parallel \overrightarrow{b}=
-		\begin{pmatrix} b_1\\b_2\\b_3 \end{pmatrix}
-		~~-\) направляющий вектор прямой \(a\).<br><br>
-		<a href="javascript:OpenList('line')">Уравнения прямой \(a:~~~
-		\displaystyle\frac{x-a_1}{b_1} = \frac{y-a_2}{b_2} = \frac{z-a_3}{b_3}.
+		Обозначения: 
+		<ul>
+			<li>\(m~-\) прямая.</li>
+			<li>\(M~-\) точка.</li>
+			<li>\(\overrightarrow{n}~-\) направляющий вектор.</li>
+		</ul>
+		\(M \in m \parallel \overrightarrow{n},~~~
+		M = \begin{pmatrix} x_{\small M}\\y_{\small M}\\z_{\small M}\end{pmatrix},~~
+		\overrightarrow{n} = 
+		\begin{pmatrix} n_{x}\\n_{y}\\n_{z}\end{pmatrix}
+		\).<br><br>
+		<a href="javascript:OpenList('line')">Уравнения прямой \(m:~~~
+		\displaystyle\frac{x-x_{\small M}}{n_x} = \frac{y-y_{\small M}}{n_y} = \frac{z-z_{\small M}}{n_z}.
 		\)</a>
 		<ul>
 		<ul id="line" hidden="true">
 			<li>
-				Если \(b = \begin{pmatrix} 0\\b_2\\b_3 \end{pmatrix}\), то 
-				уравнения прямой \(a ~:~~~
+				Если \(\overrightarrow{n} = \begin{pmatrix} 0\\n_y\\n_z \end{pmatrix}\), то 
+				уравнения прямой \(m ~:~~~
 				\begin{cases}
-					\displaystyle\frac{y-a_2}{b_2} = \frac{z-a_3}{b_3} \\
-					x = a_1
+					\displaystyle\frac{y-y_{\small M}}{n_y} = \frac{z-z_{\small M}}{n_z} \\
+					x = x_{\small M}
 				\end{cases}
 				\).
 			</li>
 			<li>
-				Если \(b = \begin{pmatrix} 0\\0\\b_3 \end{pmatrix}\), то 
-				уравнения прямой \(a ~:~~~
+				Если \(\overrightarrow{n} = \begin{pmatrix} 0\\0\\n_z \end{pmatrix}\), то 
+				уравнения прямой \(m ~:~~~
 				\begin{cases}
-					x = a_1 \\
-					y = a_2
+					x = x_{\small M} \\
+					y = y_{\small M}
 				\end{cases}
 				\).
 			</li>
 		</ul></ul>
 		<h2><a href="#begin" name="plane">Уравнение плоскости</a></h2>
-		\(\alpha ~-\) плоскость, \(A \in \alpha,~~X=
-		\begin{pmatrix} x\\y\\z \end{pmatrix} \in \alpha.
-		\)
 		<ol>
 			<li>
-				Вектор нормали \(~\overrightarrow{n} \perp \alpha\).<br><br>
-				Уравнение плоскости \(\alpha ~:~~ 
-				\overrightarrow{AX} \cdot \overrightarrow{n}=0.
-				\)
+				Обозначения: 
+				<ul>
+					<li>\(\mu~-\) плоскость.</li>
+					<li>\(M~-\) точка.</li>
+					<li>\(\overrightarrow{n}~-\) нормальный вектор.</li>
+				</ul>
+				\(M \in \mu \perp \overrightarrow{n},~~~
+				M = \begin{pmatrix} x_{\small M}\\y_{\small M}\\z_{\small M}\end{pmatrix},~~
+				\overrightarrow{n} = \begin{pmatrix} n_{x}\\n_{y}\\n_{z}\end{pmatrix}
+				\).<br><br>
+				Уравнение плоскости \(\mu:~~~
+				n_x(x-x_{\small M})+n_y(y-y_{\small M})+n_z(z-z_{\small M})=0\).
 			</li>
 			<li>
-				Направляющие векторы \(~\overrightarrow{a},\overrightarrow{b} \parallel \alpha,~~
-				\overrightarrow{a} \not\parallel \overrightarrow{b}\).<br><br>
-				Уравнение плоскости \(\alpha ~:~~ 
-				\begin{vmatrix} \overrightarrow{AX} & \overrightarrow{a} & \overrightarrow{b}
-				\end{vmatrix} =0.
-				\)
+				Обозначения: 
+				<ul>
+					<li>\(\mu~-\) плоскость.</li>
+					<li>\(M~-\) точка.</li>
+					<li>\(\overrightarrow{m} \not\parallel \overrightarrow{n}~-\) направляющие векторы.</li>
+				</ul>
+				\(M \in \mu \parallel \overrightarrow{m},\overrightarrow{n}
+				,~~~M = \begin{pmatrix} x_{\small M}\\y_{\small M}\\z_{\small M}\end{pmatrix}\).<br><br>
+				Уравнение плоскости \(\mu:~~~
+				\begin{vmatrix} x-x_{\small M} \\ 
+				y-y_{\small M} & \overrightarrow{m} & \overrightarrow{n} \\
+				z-z_{\small M}
+				\end{vmatrix} = 0
+				\).
 			</li>
 		</ol>
 		<h2><a href="#begin" name="angles">Углы</a></h2>
@@ -317,8 +337,8 @@
 			</li>
 			<li>
 				\(\rho(m,n)=\rho(\mu,n),~~~M \in m \subset \mu \parallel n,~~~
-				\begin{vmatrix} \begin{pmatrix} x\\y\\z \end{pmatrix} - M & \overrightarrow{m} & \overrightarrow{n} \end{vmatrix} = 0~-
-				\) уравнение \(\mu\).
+				\) \(\overrightarrow{m},\overrightarrow{n}~-\) направляющие векторы
+				\(\mu\).
 			</li>
 			<li>
 				\(\rho(m,\mu) = \rho(M,\mu),~~~M \in m \parallel \mu\).
