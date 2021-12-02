@@ -275,9 +275,11 @@
 				\(M \in \mu \parallel \overrightarrow{m},\overrightarrow{n}
 				,~~~M = \begin{pmatrix} x_{\small M}\\y_{\small M}\\z_{\small M}\end{pmatrix}\).<br><br>
 				Уравнение плоскости \(\mu:~~~
-				\begin{vmatrix} x-x_{\small M} \\ 
-				y-y_{\small M} & \overrightarrow{m} & \overrightarrow{n} \\
-				z-z_{\small M}
+				\begin{vmatrix}
+				\begin{pmatrix}
+					x\\y\\z 
+				\end{pmatrix} - M 
+				 & \overrightarrow{m} & \overrightarrow{n} \\
 				\end{vmatrix} = 0
 				\).
 			</li>
@@ -336,8 +338,8 @@
 				\(\rho(m,n)=\rho(M,n),~~~M\in m \parallel n\).
 			</li>
 			<li>
-				\(\rho(m,n)=\rho(\mu,n),~~~M \in m \subset \mu \parallel n,~~~
-				\) \(\overrightarrow{m},\overrightarrow{n}~-\) направляющие векторы
+				\(\rho(m,n)=\rho(\mu,n),~~~m \subset \mu \parallel n,~~~
+				\) \(\overrightarrow{m} \not\parallel\overrightarrow{n}~-\) направляющие векторы
 				\(\mu\).
 			</li>
 			<li>
