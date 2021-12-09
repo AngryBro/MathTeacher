@@ -1,0 +1,117 @@
+<html lang="en">
+    <head>
+        <title>Исследование функции</title>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1><a name="begin"></a><a href="index.html">Исследование функции</a></h1>
+        <ul>
+            <li><a href="#derivative">Производная</a></li>
+            <li><a href="#points">Типы точек</a></li>
+			<li><a href="#touching">Касательная</a></li>
+			<li><a href="#touching">Первообразная и интеграл</a></li>
+			<li><a href="#alg">Алгоритм исследования</a></li>
+        </ul>
+        <h2><a name='derivative' href='#begin'>Производная</a></h2>
+		<h3>Обозначение</h3>
+		\(x'(t_0)~-\) производная функции \(x\) в точке \(t_0\).
+		<h3>Определение</h3>
+		\(x'(t_0) = \displaystyle\lim_{t_1 \rightarrow t_0}\frac{x(t_1)-x(t_0)}{t_1-t_0}\).
+		<h3>Свойства</h3>
+		Обозначения:
+		<ul>
+			<li>
+				\(x~-\) функция.
+			</li>
+			<li>
+				\(t~-\) аргумент функции.
+			</li>
+			<li>
+				\(c~-\) постоянное число (константа).
+			</li>
+		</ul>
+		\(\)
+		\(
+			\begin{array}{|c|c|}
+				\hline
+				Выражение & Производная \\ \hline
+				c & 0 \\ \hline
+				t & 1 \\ \hline
+				x^c & c \cdot x^{c-1} \cdot x' \\ \hline
+				(c \cdot x)' & c \cdot (x)' \\ \hline
+				x \pm y & x' \pm y' \\ \hline
+				x \cdot y & x' \cdot y + x \cdot y' \\ \hline
+				\displaystyle\frac{x}{y} & \displaystyle\frac{x' \cdot y - x \cdot y'}{y^2} \\ \hline
+				c^x & c^x \cdot \ln{c} \cdot x' \\ \hline
+				\log_c{x} & \displaystyle\frac{1}{x \cdot \ln{c}} \cdot x' \\ \hline
+				\sin{x} & \cos{x} \cdot x' \\ \hline
+				\cos{x} & -\sin{x} \cdot x' \\ \hline
+				\operatorname{tg}{x} & \left(\operatorname{tg^2}{x}+1\right) \cdot x' \\ \hline
+				\operatorname{ctg}{x} & \left(-\operatorname{ctg^2}{x}-1\right) \cdot x' \\ \hline
+			\end{array}
+		\)
+		<ol>
+			<li>
+				\(
+					\begin{cases}
+						x'(t) \geq 0 \\
+						t \in (a;~b)
+					\end{cases} \Leftrightarrow
+					\begin{cases}
+						x(t) \nearrow \\
+						t \in [a;~b]
+					\end{cases}
+				\)
+			</li>
+			<li>
+				\(
+					\begin{cases}
+						x'(t) \leq 0 \\
+						t \in (a;~b)
+					\end{cases} \Leftrightarrow
+					\begin{cases}
+						x(t) \searrow \\
+						t \in [a;~b]
+					\end{cases}
+				\)
+			</li>
+		</ol>
+		<h2><a name='points' href='#begin'>Типы точек</a></h2>
+		<ol>
+			<li>
+				Критическая &ndash; точка, в которой производная либо равна 0,
+				либо не существует.
+			</li>
+			<li>
+				Стационарная &ndash; точка, в которой производная равна 0.
+			</li>
+			<li>
+				Максимума &ndash; точка, значение функции в которой больше,
+				чем значение в соседних точках.
+			</li>
+			<li>
+				Минимума &ndash; точка, значение функции в которой меньше,
+				чем значение в соседних точках.
+			</li>
+			<li>
+				Экстремума &ndash; точка, являющаяся либо точкой максимума,
+				либо точкой минимума.
+			</li>
+		</ol>
+		<h2><a name='touching' href='#begin'>Касательная</a></h2>
+		График \(x = f(t)\) касается графика \(x=\varphi(t)\) в точке \(t_0\):<br><br>
+		\(
+			\begin{cases}
+				f(t) = \varphi(t) \\
+				f'(t) = \varphi '(t) \\
+				t = t_0
+			\end{cases}.
+		\)
+		<h2><a name='integral' href='#begin'>Первообразная и интеграл</a></h2>
+		[В разработке]
+		<h2><a name='alg' href='#begin'>Алгоритм исследования функции</a></h2>
+		[В разработке]
+    </body>
+</html>
