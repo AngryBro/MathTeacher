@@ -100,40 +100,40 @@
 				\(
 					\left|
 						\begin{array}{c}
-							a & b \\
-							c & d
+							a_{11} & a_{12} \\
+							a_{21} & a_{22}
 						\end{array}
-					\right| = ad - bc.
+					\right| = a_{11} \cdot a_{22} - a_{12} \cdot a_{21}.
 				\)
 			</li>
 			<li>
 				\(
 					\left|
 						\begin{array}{c}
-							x & a_1 & a_2 \\
-							y & a_3 & a_4 \\
-							z & a_5 & a_6 
+							a_{11} & a_{12} & a_{13} \\
+							a_{21} & a_{22} & a_{23} \\
+							a_{31} & a_{32} & a_{33} 
 						\end{array}
 					\right| =
-					+x \cdot
+					+a_{11} \cdot
 					\left|
 						\begin{array}{c}
-							a_3 & a_4 \\
-							a_5 & a_6
+							a_{22} & a_{23} \\
+							a_{32} & a_{33}
 						\end{array}
 					\right|
-					-y \cdot
+					-a_{21} \cdot
 					\left|
 						\begin{array}{c}
-							a_1 & a_2 \\
-							a_5 & a_6
+							a_{12} & a_{13} \\
+							a_{32} & a_{33}
 						\end{array}
 					\right|
-					+z \cdot
+					+a_{31} \cdot
 					\left|
 						\begin{array}{c}
-							a_1 & a_2 \\
-							a_3 & a_4
+							a_{12} & a_{13} \\
+							a_{22} & a_{23}
 						\end{array}
 					\right|.
 				\)
@@ -274,7 +274,7 @@
 				<a href="javascript:OpenList('plane')">Уравнение плоскости \(\mu:~~~
 				n_x(x-x_{\small M})+n_y(y-y_{\small M})+n_z(z-z_{\small M})=0\).</a>
 				<ul id='plane' hidden>
-					<li>\(\left(\begin{pmatrix} x\\y\\z \end{pmatrix} - M\right) \cdot \overrightarrow{n} = 0\).</li>
+					<li>\(\overrightarrow{MX} \cdot \overrightarrow{n} = 0,~~~~~~~~~~~~~~~~~\overrightarrow{MX}=\begin{pmatrix} x\\y\\z \end{pmatrix} - M\).</li>
 				</ul>
 				<br><br>Способ найти \(\overrightarrow{n}~:~~\)
 				\(
@@ -284,22 +284,21 @@
 					\end{cases}
 					,~~~\mu\parallel\overrightarrow{m},\overrightarrow{k}
 					~-
-				\) направляющие векторы.
+				\) параллельные к плоскости векторы.
 			</li>
 			<li>
 				Обозначения: 
 				<ul>
 					<li>\(\mu~-\) плоскость.</li>
 					<li>\(M~-\) точка.</li>
-					<li>\(\overrightarrow{m} \not\parallel \overrightarrow{n}~-\) направляющие векторы.</li>
+					<li>\(\overrightarrow{m} \not\parallel \overrightarrow{n}~-\) параллельные к плоскости векторы.</li>
 				</ul>
 				\(M \in \mu \parallel \overrightarrow{m},\overrightarrow{n}
-				\).<br>
+				\).<br><br>
+				\(\overrightarrow{MX}=\begin{pmatrix} x\\y\\z \end{pmatrix} - M\).<br>
 				Уравнение плоскости \(\mu:~~~
 				\begin{vmatrix}
-				\begin{pmatrix}
-					x\\y\\z 
-				\end{pmatrix} - M 
+				\overrightarrow{MX} 
 				 & \overrightarrow{m} & \overrightarrow{n} \\
 				\end{vmatrix} = 0
 				\).
@@ -359,8 +358,8 @@
 			</li>
 			<li>
 				\(\rho(m,n)=\rho(\mu,n),~~~m \subset \mu \parallel n,~~~
-				\) \(\overrightarrow{m} \not\parallel\overrightarrow{n}~-\) направляющие векторы
-				\(\mu\).
+				\) \(\overrightarrow{m} \not\parallel\overrightarrow{n}~-\) параллельные \(\mu\) векторы
+				.
 			</li>
 			<li>
 				\(\rho(m,\mu) = \rho(M,\mu),~~~M \in m \parallel \mu\).
