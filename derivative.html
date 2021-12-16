@@ -32,12 +32,12 @@
 			</li>
 			<li>
 				\(
-					x(t) \nearrow ,~t\in T \Leftrightarrow
+					x(t) \nearrow\) при \(~t\in T \Leftrightarrow
 				\) для любых \(t_2>t_1 \in T:~~x(t_2)>x(t_1)\).
 			</li>
 			<li>
 				\(
-					x(t) \searrow ,~t\in T \Leftrightarrow
+					x(t) \searrow\) при \(~t\in T \Leftrightarrow
 				\) для любых \(t_2>t_1 \in T:~~x(t_2) < x(t_1) \).
 			</li>
 		</ul>
@@ -54,14 +54,14 @@
 				\(c~-\) постоянное число (константа).
 			</li>
 		</ul>
-		<text id='derivativeproof'>
+		<text id='derpr'>
 		\(
 			\begin{array}{|c|c|}
 				\hline
 				Выражение & Производная \\ \hline
 				c & 0 \\ \hline
 				t & 1 \\ \hline
-				(c \cdot x)' & c \cdot (x)' \\ \hline
+				c \cdot x & c \cdot x' \\ \hline
 				x \pm y & x' \pm y' \\ \hline
 				x \cdot y & x' \cdot y + x \cdot y' \\ \hline
 				\displaystyle\frac{x}{y} & \displaystyle\frac{x' \cdot y - x \cdot y'}{y^2} \\ \hline
@@ -75,32 +75,21 @@
 			\end{array}
 		\)</text>
 		<ol>
-			<li>
+			<li> 
 				\(
-					\begin{cases}
-						x'(t) \geq 0 \\
-						t \in (t_1;~t_2)
-					\end{cases} \Leftrightarrow
-					\begin{cases}
-						x(t) \nearrow \\
-						t \in [t_1;~t_2]
-					\end{cases}
+					x'(t) \geq 0,~~ (x'(t)=0\) в конечном количестве точек) при 
+					\(t \in (t_1;~t_2)\) \( ~~\Leftrightarrow~~
+					x(t) \nearrow \) при  \(t \in [t_1;~t_2].
 				\)
 			</li>
 			<li>
 				\(
-					\begin{cases}
-						x'(t) \leq 0 \\
-						t \in (t_1;~t_2)
-					\end{cases} \Leftrightarrow
-					\begin{cases}
-						x(t) \searrow \\
-						t \in [t_1;~t_2]
-					\end{cases}
+					x'(t) \leq 0,~~ (x'(t)=0\) в конечном количестве точек) при 
+					\(t \in (t_1;~t_2)\) \( ~~\Leftrightarrow~~
+					x(t) \searrow \) при  \(t \in [t_1;~t_2].
 				\)
 			</li>
 		</ol>
-		При этом не существует интервала, где в каждой точке \(x'(t)=0\).
 		<h2><a name='points' href='#begin'>Типы точек</a></h2>
 		<ol>
 			<li>
@@ -142,8 +131,24 @@
 				F(t_2)-F(t_1).\)
 			</li>
 		</ol>
-		<h2><a name='alg' href='#begin'>Алгоритм исследования функции</a></h2>
-		[В разработке]
+		<h2><a name='alg' href='#begin'>Алгоритм исследования функции на возрастание и убывание</a></h2>
+		<ol>
+			<li>
+				Поиск области определения.
+			</li>
+			<li>
+				Нахождение производной.
+			</li>
+			<li>
+				Поиск критических точек.
+			</li>
+			<li>
+				Вычисление знаков производной на промежутках.
+			</li>
+			<li>
+				Определение возрастания и убывания на промежутках по знаку производной.
+			</li>
+		</ol>
 		<div id='test'></div>
 		<script src="derivativeproof.js"></script>
     </body>
