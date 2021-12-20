@@ -3,9 +3,9 @@ var nl = `\\)<br><br>\\(\\displaystyle =`;
 	ProofPush(`f'_t(x(t))=\\displaystyle\\lim_{t_1 \\rightarrow t}
 	\\frac{f(x(t_1))-f(x(t))}{t_1-t} = \\lim_{t_1 \\rightarrow t}\\left(
 	\\frac{f(x(t_1))-f(x(t))}{x(t_1)-x(t)} \\cdot \\frac{x(t_1)-x(t)}{t_1-t}\\right) =`+nl+`
-	\\lim_{x(t_1) \\rightarrow x(t)}
-	\\frac{f(x(t_1))-f(x(t))}{x(t_1)-x(t)} \\cdot \\lim_{t_1 \\rightarrow t}\\frac{x(t_1)-x(t)}{t_1-t} =
-	f'_x(x(t)) \\cdot x'_t(t).`);
+	\\lim_{x_1 \\rightarrow x}
+	\\frac{f(x_1)-f(x)}{x_1-x} \\cdot \\lim_{t_1 \\rightarrow t}\\frac{x(t_1)-x(t)}{t_1-t} =
+	f'_x(x) \\cdot x'_t(t).`);
 	ProofPush(`c' = \\displaystyle\\lim_{t_1 \\rightarrow t}
 	\\frac{c-c}{t_1-t} = \\displaystyle\\lim_{t_1 \\rightarrow t} 0 =0.`);
 	ProofPush(`t' = \\displaystyle\\lim_{t_1 \\rightarrow t}
@@ -66,55 +66,57 @@ var nl = `\\)<br><br>\\(\\displaystyle =`;
 	\\frac{(\\cos{t})'\\cdot \\sin{t}-(\\sin{t})'\\cdot \\cos{t}}{\\sin^2{t}}=
 	\\frac{-\\sin^2{t}-\\cos^2{t}}{\\sin^2{t}} = -1-\\operatorname{ctg^2}{t}.`);
 var derivatives = [];
-DerivativePush('c','0');
-DerivativePush('t','1');
-DerivativePush('c \\cdot x','c \\cdot x\'');
-DerivativePush('x\\pm y','x\'\\pm y\'');
-DerivativePush('x \\cdot y','x\' \\cdot y + x \\cdot y\'');
-DerivativePush('\\displaystyle\\frac{x}{y}','\\displaystyle\\frac{x\' \\cdot y - x \\cdot y\'}{y^2}');
-DerivativePush('x^c','c \\cdot x^{c-1} \\cdot x\'');
-DerivativePush('c^x','c^x \\cdot \\ln{c} \\cdot x\'');
-DerivativePush('\\log_c{x}','\\displaystyle\\frac{1}{x \\cdot \\ln{c}} \\cdot x\'');
-DerivativePush('\\sin{x}','\\cos{x} \\cdot x\'');
-DerivativePush('\\cos{x}','-\\sin{x} \\cdot x\'');
-DerivativePush('\\operatorname{tg}{x}','\\left(\\operatorname{tg^2}{x}+1\\right) \\cdot x\'');
-DerivativePush('\\operatorname{ctg}{x}','\\left(-\\operatorname{ctg^2}{x}-1\\right) \\cdot x\'');
-opened = false;
-function Print(proof_) {
-	var cmd;
-	if(arguments.length==0) {
-		cmd = '\\(\\begin{array}{|c|c|} \\hline Выражение & Производная \\\\ \\hline ';
-		for(var i = 0; i<derivatives.length; i++) {
-			cmd += derivatives[i];
-		}
+DerivativePush(1,'\\(c\\)','\\(0\\)');
+DerivativePush(2,'\\(t\\)','\\(1\\)');
+DerivativePush(3,'\\(c \\cdot x\\)','\\(c \\cdot x\'\\)');
+DerivativePush(4,'\\(x\\pm y\\)','\\(x\'\\pm y\'\\)');
+DerivativePush(5,'\\(x \\cdot y\\)','\\(x\' \\cdot y + x \\cdot y\'\\)');
+DerivativePush(6,'\\(\\displaystyle\\frac{x}{y}\\)','\\(\\displaystyle\\frac{x\' \\cdot y - x \\cdot y\'}{y^2}\\)');
+DerivativePush(7,'\\(x^c\\)','\\(c \\cdot x^{c-1} \\cdot x\'\\)');
+DerivativePush(8,'\\(c^x\\)','\\(c^x \\cdot \\ln{c} \\cdot x\'\\)');
+DerivativePush(9,'\\(\\log_c{x}\\)','\\(\\displaystyle\\frac{1}{x \\cdot \\ln{c}} \\cdot x\'\\)');
+DerivativePush(10,'\\(\\sin{x}\\)','\\(\\cos{x} \\cdot x\'\\)');
+DerivativePush(11,'\\(\\cos{x}\\)','\\(-\\sin{x} \\cdot x\'\\)');
+DerivativePush(12,'\\(\\operatorname{tg}{x}\\)','\\(\\left(\\operatorname{tg^2}{x}+1\\right) \\cdot x\'\\)');
+DerivativePush(13,'\\(\\operatorname{ctg}{x}\\)','\\(\\left(-\\operatorname{ctg^2}{x}-1\\right) \\cdot x\'\\)');
+opened = 0;
+function OpenProof(n) {
+	if(opened==n) {
+		Print(0);
+		opened = 0;
 	}
 	else {
-		cmd = '\\('+proofs[0]+'\\)<br><br>';
-		cmd += '\\(\\begin{array}{|c|c|} \\hline Выражение & Производная \\\\ \\hline ';
-		for(var i = 0; i<derivatives.length; i++) {
-			cmd += derivatives[i];
-			if(i+1==proof_) {
-				cmd += '\\end{array}\\)<br><br>\\(';
-				cmd += proofs[proof_];
-				cmd += '\\) ';
-				cmd += '<br><br>\\(\\begin{array}{|c|c|} \\hline ';
-			}
+		Print(n);
+		opened = n;
+	}
+}
+function Print(proof_) {
+	var cmd = '<table>';
+	cmd += '<tr><td>№</td><td>Выражение</td><td>Производная</td></tr>';
+	for(var i = 0; i<derivatives.length; i++) {
+		cmd += derivatives[i];
+		if(proof_ == i+1) {
+			cmd += '</table><br>';
+			cmd += proofs[proof_];
+			cmd += '<br><br><table>';
 		}
 	}
-	cmd += '\\end{array}\\)';
+	cmd += '</table>';
 	document.getElementById('derpr').innerHTML = cmd;
 	MathJax.typeset();
 }	
-function DerivativePush(func,derivative) {
-	var cmd = '';
+function DerivativePush(n,func,derivative) {
+	n = String(n);
+	var cmd = '<tr>';
+	cmd += '<td>'+n+'.</td><td>';
 	cmd += func;
-	cmd += ' & ';
+	cmd += '</td><td><a href=\'javascript:OpenProof('+n+')\'>';
 	cmd += derivative;
-	cmd += ' \\\\ \\hline ';
+	cmd += '</a></td></tr>';
 	derivatives.push(cmd);
 }
 function ProofPush(proof) {
-	var cmd = proof;
+	var cmd = '\\('+proof+'\\)';
 	//cmd += '\\\\ \\hline';
 	proofs.push(cmd);
 }	

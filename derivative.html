@@ -2,7 +2,7 @@
     <head>
         <title>Исследование функции</title>
 		<meta charset='utf-8'/>
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
     </head>
@@ -55,25 +55,7 @@
 			</li>
 		</ul>
 		<text id='derpr'>
-		\(
-			\begin{array}{|c|c|}
-				\hline
-				Выражение & Производная \\ \hline
-				c & 0 \\ \hline
-				t & 1 \\ \hline
-				c \cdot x & c \cdot x' \\ \hline
-				x \pm y & x' \pm y' \\ \hline
-				x \cdot y & x' \cdot y + x \cdot y' \\ \hline
-				\displaystyle\frac{x}{y} & \displaystyle\frac{x' \cdot y - x \cdot y'}{y^2} \\ \hline
-				x^c & c \cdot x^{c-1} \cdot x' \\ \hline
-				c^x & c^x \cdot \ln{c} \cdot x' \\ \hline
-				\log_c{x} & \displaystyle\frac{1}{x \cdot \ln{c}} \cdot x' \\ \hline
-				\sin{x} & \cos{x} \cdot x' \\ \hline
-				\cos{x} & -\sin{x} \cdot x' \\ \hline
-				\operatorname{tg}{x} & \left(\operatorname{tg^2}{x}+1\right) \cdot x' \\ \hline
-				\operatorname{ctg}{x} & \left(-\operatorname{ctg^2}{x}-1\right) \cdot x' \\ \hline
-			\end{array}
-		\)</text>
+		</text>
 		<ol>
 			<li> 
 				\(
@@ -151,5 +133,6 @@
 		</ol>
 		<div id='test'></div>
 		<script src="derivativeproof.js"></script>
+		<script>Print(0)</script>
     </body>
 </html>

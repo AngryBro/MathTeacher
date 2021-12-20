@@ -24,3 +24,19 @@ a:hover {
 .normal {
     font-weight: normal;
 }
+.highlight {
+	font-size: 50;
+	font-weight: 500;
+}
+table {
+	font-size: 40;
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+td {
+	border: 2px solid black;
+	padding: 7px;
+}
+tr {
+	text-align: center;
+}
