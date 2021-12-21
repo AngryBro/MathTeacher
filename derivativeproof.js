@@ -98,6 +98,10 @@ function Print(proof_) {
 		if(proof_ == i+1) {
 			cmd += '</table><br>';
 			cmd += proofs[proof_];
+			if(proof_>6) {
+				cmd += '<br><br>';
+				cmd += proofs[0];
+			}
 			cmd += '<br><br><table>';
 		}
 	}
