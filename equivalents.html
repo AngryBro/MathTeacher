@@ -18,26 +18,26 @@
                 <li><a href="javascript:OpenList('list1')">
                     \( 
                     \begin{array}[t]{|l|} \hline
-                    \displaystyle a_n \cdot x^n + a_{n-1} \cdot x^{n-1} + \ldots
-                    + a_2 \cdot x^2 + a_1 \cdot x + a_0 = 0 \Leftrightarrow \\
-                    \Leftrightarrow a_n \cdot (x - x_1) \cdot(x - x_2) \cdot \ldots \cdot (x - x_m) = 0 \Leftrightarrow
+                    \displaystyle a_n t^n + a_{n-1} t^{n-1} + \ldots
+                    + a_2  t^2 + a_1  t + a_0 = 0 \Leftrightarrow \\
+                    \Leftrightarrow (t - t_1) \cdot(t - t_2) \cdot \ldots \cdot (t - t_m) = 0 \Leftrightarrow
                     \left[
                     \begin{array}{l}
-                    x=x_1 \\
-                    x=x_2 \\
+                    t=t_1 \\
+                    t=t_2 \\
                     \ldots \\
-                    x=x_m
+                    t=t_m
                     \end{array}
                     \right. \\ \hline \end{array} \)</a>
                     <ul hidden="true" id="list1">
                         <li>
                             \(
-                                a \cdot x^2 + b \cdot x + c = 0
+                                a t^2 + b  t + c = 0
                                 \Leftrightarrow
                                 \left[
                                     \begin{array}{l}
-                                        x = x_1 \\
-                                        x = x_2
+                                        t = t_1 \\
+                                        t = t_2
                                     \end{array}
                                 \right.
                             \)
@@ -46,30 +46,6 @@
                 </li>
                 <li><a href="javascript:OpenList('list2')">\( \begin{array}[t]{|l|} \hline
                     \displaystyle a_1 \cdot a_2 \cdot \ldots \cdot a_n = 0 \Leftrightarrow
-                    \left[
-                        \begin{array}{l}
-                            \left\{
-                                \begin{array}{l}
-                                    a_1=0 \\
-                                    ограничения~из~a_2,~a_3, \ldots ,a_n  
-                                \end{array}
-                            \right. \\
-                            \left\{
-                                \begin{array}{l}
-                                    a_2=0 \\
-                                    ограничения~из~a_1,~a_3, \ldots ,a_n  
-                                \end{array}
-                            \right.\\
-                            \ldots \\
-                            \left\{
-                                \begin{array}{l}
-                                    a_n=0 \\
-                                    ограничения~из~a_1,~a_2, \ldots ,a_{n-1}  
-                                \end{array}
-                            \right.
-                        \end{array}
-                    \right.
-                    \Leftrightarrow
                     \left\{
                         \begin{array}{l}
                             \left[
@@ -103,17 +79,6 @@
                                                 ограничения~из~a
                                             \end{array}
                                         \right.
-                                    \end{array}
-                                \right. \Leftrightarrow
-                                \left\{
-                                    \begin{array}{l}
-                                        \left[
-                                            \begin{array}{l}
-                                                a = 0 \\
-                                                b = 0
-                                            \end{array}
-                                        \right.\\
-                                        ограничения~из~a,~b
                                     \end{array}
                                 \right.
                             \)
@@ -224,26 +189,36 @@
                 </li>
                 <li>
                     <a href="javascript:OpenList('list6')">
-                        \( \begin{array}[t]{|l|} \hline \displaystyle
-                        a_n \cdot \sin^n{x} + a_{n-1} \cdot \sin^{n-1}{x} \cdot \cos{x} +
-                        a_{n-2} \cdot \sin^{n-2} \cdot \cos^2{x} + \ldots
-                        + a_1 \cdot \sin{x} \cdot \cos^{n-1} + a_0 \cdot \cos^n{x} = 0
-                        \Leftrightarrow  \\
-                        \Leftrightarrow a_n \cdot \operatorname{tg}^{n}{x} + a_{n-1} \cdot \operatorname{tg}^{n-1}{x} + \ldots
-                        + a_1 \cdot \operatorname{tg}{x} + a_0 = 0 \\ \hline \end{array}
+                        \( 
+							\begin{array}[t]{|l|} \hline 
+								a_n x^n + a_{n-1} x^{n-1}y + a_{n-2}x^{n-2}y^2 + \ldots +a_1xy^{n-1}+a_0y^n=0
+							\\ \hline \end{array}
                         \)
                     </a>
                     <ul hidden="true" id="list6">
                         <li>
                             \(
-                                a \cdot \sin{x} + b \cdot \cos{x} = 0 \Leftrightarrow
-                                a \cdot \operatorname{tg}{x} + b = 0
+                                a \cdot m^{t} = b \cdot n^{t}  ~\Leftrightarrow ~
+                                a \cdot \left(\displaystyle\frac{m}{n}\right)^t = b
+                            \)
+                        </li>
+						<li>
+                            \(
+                                a \cdot \left(m^2\right)^{t} + b \cdot (mn)^{t} + c \cdot \left(n^2\right)^{t}  ~\Leftrightarrow ~
+                                a \cdot \left(\left(\displaystyle\frac{m}{n}\right)^t\right)^2 + 
+								b \cdot \left(\displaystyle\frac{m}{n}\right)^t + c = 0
+                            \)
+                        </li>
+						<li>
+                            \(
+                                a \cdot \sin{t} = b \cdot \cos{t}  ~\Leftrightarrow~
+                                a \cdot \operatorname{tg}{x} = b
                             \)
                         </li>
                         <li>
                             \(
-                                a \cdot \sin^2{x} + b \cdot \sin{x} \cdot \cos{x} + c \cdot \cos^2{x} = 0 \Leftrightarrow
-                                a \cdot \operatorname{tg^2}{x} + b \cdot \operatorname{tg}{x} + c = 0
+                                a \cdot \sin^2{t} + b \cdot \sin{t} \cdot \cos{t} + c \cdot \cos^2{t} = 0 ~\Leftrightarrow ~
+                                a \cdot \operatorname{tg^2}{t} + b \cdot \operatorname{tg}{t} + c = 0
                             \)
                         </li>
                     </ul>
@@ -326,7 +301,7 @@
                         </li>
                         <li>
                             \(
-                                \sqrt[чёт]{a} \neq \sqrt[чёт]{b} \Leftrightarrow
+                                \sqrt[чЄт]{a} \neq \sqrt[чЄт]{b} \Leftrightarrow
                                 \left\{
                                     \begin{array}{l}
                                         a \neq b \\
@@ -357,7 +332,7 @@
                     \(\begin{array}[t]{|l|} \hline \displaystyle
                     \frac{(x-a_1)^{k_1} \cdot (x-a_2)^{k_2} \cdot \ldots \cdot (x-a_n)^{k_n}}
                     {(x-b_1)^{t_1} \cdot (x-b_2)^{t_2} \cdot \ldots \cdot (x-b_m)^{t_m}} \vee 0
-                    - По~методу~интервалов \\ \hline \end{array}
+                    - по~методу~интервалов \\ \hline \end{array}
                     \)</a>
                     <ul id="list9" hidden="true">
                         
@@ -494,11 +469,6 @@
                                 \right.
                             \)
                         </li>
-                        <li>
-                            \(
-                                
-                            \)
-                        </li>
                     </ul>
                 </li>
             </ol>
@@ -512,7 +482,7 @@
                 </li>
                 <li><a href="javascript:OpenList('list13')">
                 \( \begin{array}[t]{|l|} \hline
-                    истина \Leftrightarrow ограничения
+                    истина \Leftrightarrow ограничени¤
                     \\ \hline \end{array}
                 \)</a>
                     <ul id="list13" hidden="true">
