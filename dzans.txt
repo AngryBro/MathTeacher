@@ -58,7 +58,7 @@ data = {
 		],
 		[
 		abans(is('\\pi+2\\pi k','\\displaystyle\\frac{\\pi}{2}+2\\pi k:~k\\in\\mathbb{Z}'),
-		is('-3\\pi','-\\displaystyle\\frac{7\\pi}{2}')),
+		is('-\\displaystyle\\frac{7\\pi}{2}','-3\\pi')),
 		abans(is('\\pi k:~k\\in\\mathbb{Z}'),is(0,'\\pi')),
 		abans(is('-\\displaystyle\\operatorname{arctg}{\\frac{2}{5}}+\\pi k',
 		'-\\displaystyle\\frac{\\pi}{4}+\\pi k:~k\\in\\mathbb{Z}'),
