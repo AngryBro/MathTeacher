@@ -1,0 +1,30 @@
+{
+	"diagnostic": [
+			{
+				"name": "Диагностика от 13.02.2022",
+				"link": "aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvMVk0M3RxcnJuZGVOZ0pxWUtQOXdnMGl1c3F5NlR2UU52NFVaT003YmhfLTgvZWRpdD91c3A9c2hhcmluZw=="
+			},
+			{
+				"name": "Диагностика от [дата]",
+				"link": "ZW1wdHkuaHRtbA=="
+			},
+			{
+				"name": "Диагностика от [дата]",
+				"link": "ZW1wdHkuaHRtbA=="
+			},
+			{
+				"name": "Диагностика от [дата]",
+				"link": "ZW1wdHkuaHRtbA=="
+			}
+		],
+	"otherlinks": [
+			{
+				"name": "Вопросы эксперту",
+				"link": "aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvMTJ5X2s0eXNacG9fNVdLQ2ZGbG9nazFJYnBkVnhkZDloekRYbDVHWVhvLU0vZWRpdCNnaWQ9MA=="
+			},
+			{
+				"name": "Ответы к ДЗ",
+				"link": "ZHphbnMuaHRtbA=="
+			}
+		]
+}
