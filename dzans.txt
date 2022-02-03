@@ -81,6 +81,12 @@ data = {
 		abans(is('\\pm 6\\pi','\\displaystyle\\frac{\\pi}{3}+\\pi k',
 		'\\displaystyle\\frac{2\\pi}{3}+\\pi k:~k\\in\\mathbb{Z}\\backslash[-6;~5]'),
 		is('6\\pi','\\displaystyle\\frac{19\\pi}{3}'))
+		],
+		[
+			math(rs('-\\infty',0)+U()+sr(2,4))+'.',
+			math(sr('-0,5',0)+U()+rs(0,'0,5')+U()+sr(1,'+\\infty'))+'.',
+			math(ss(-2,'\\sqrt{15}'))+'.',
+			math(sr(-3,-2)+U()+rr(-2,1)+U()+sr('3,5','+\\infty'))+'.'
 		]
 	]
 }
