@@ -12,8 +12,8 @@ data = {
 		"<option>41</option>",
 		"<option>42</option>",
 		"<option>43</option>",
-		"<option>45</option>",
-		"<option>46</option>"
+		"<option>44</option>",
+		"<option>45</option>"
 	],
 	answers: [
 		[
