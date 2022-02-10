@@ -10,7 +10,10 @@ data = {
 		"<option>39</option>",
 		"<option>40</option>",
 		"<option>41</option>",
-		"<option>42</option>"
+		"<option>42</option>",
+		"<option>43</option>",
+		"<option>45</option>",
+		"<option>46</option>"
 	],
 	answers: [
 		[
@@ -87,6 +90,34 @@ data = {
 			math(sr('-0,5',0)+U()+rs(0,'0,5')+U()+sr(1,'+\\infty'))+'.',
 			math(ss(-2,'\\sqrt{15}'))+'.',
 			math(sr(-3,-2)+U()+rr(-2,1)+U()+sr('3,5','+\\infty'))+'.'
+		],
+		[
+			math('\\mathbb{R}\\setminus'+is(0))+'.',
+			math(rs(0,'\\log_5{2}')+U()+rs('\\log_5{3}',1))+'.',
+			math(rs('-\\infty',-1)+U()+sr('\\displaystyle\\frac{1}{2}','+\\infty'))+'.',
+			math(rs('-\\infty',0)+U()+sr(2,'+\\infty'))+'.',
+			math(rr('-\\infty',-7)+U()+sr('-\\log_2{10}','+\\infty'))+'.'
+		],
+		[
+			math(rs(0,1)+U()+sr(5,'+\\infty'))+'.',
+			math(rs(2,'2+\\sqrt{3}'))+'.',
+			math(rs('\\displaystyle\\frac{-3-\\sqrt{29}}{2}',-4)+U()+ss(0,1))+'.',
+			math(rs('-2,5','-\\displaystyle\\frac{7}{3}')+U()+rr(-2,'+\\infty'))+'.',
+			math(rr('\\displaystyle\\frac{1}{81}',1)+U()+sr('3^{11}','+\\infty'))+'.'
+		],
+		[
+			math(rr(-6,-5)+U()+sr(3,'3,5')+U()+rs(5,'5,5'))+'.',
+			math(sr('\\displaystyle\\frac{1}{6}','\\displaystyle\\frac{1}{2}'))+'.',
+			math(rs(0,'\\displaystyle\\frac{1}{5}')+U()+sr('\\displaystyle\\frac{1}{\\sqrt{2}}',1))+'.',
+			math(rr('\\displaystyle\\frac{-1-\\sqrt{5}}{2}',-1)+U()+rs(0,'\\displaystyle\\frac{1}{3}')+U()+rr('\\displaystyle\\frac{-1+\\sqrt{5}}{2}',1)+U()+rr(1,'+\\infty'))+'.',
+			math(rr('-\\infty',-1)+U()+sr('-\\displaystyle\\frac{1}{2}',0)+U()+rr(0,1))+'.'
+		],
+		[
+			math(rs(2,3))+'.',
+			math(rs('\\displaystyle\\frac{5}{3}','\\displaystyle\\frac{7}{4}')+U()+rr(2,'+\\infty'))+'.',
+			math(rr(1,'\\displaystyle\\frac{1+\\sqrt{5}}{2}'))+'.',
+			math(rr(0,'\\displaystyle\\frac{1}{3}')+U()+sr(1,'+\\infty'))+'.',
+			math(sr(2,'+\\infty'))+'.'
 		]
 	]
 }
