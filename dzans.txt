@@ -118,6 +118,9 @@ data = {
 			math(rr(1,'\\displaystyle\\frac{1+\\sqrt{5}}{2}'))+'.',
 			math(rr(0,'\\displaystyle\\frac{1}{3}')+U()+sr(1,'+\\infty'))+'.',
 			math(sr(2,'+\\infty'))+'.'
+		],
+		[
+			"dsadas"
 		]
 	]
 }
