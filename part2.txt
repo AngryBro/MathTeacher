@@ -1,4 +1,4 @@
-data = {
+data2 = {
 	option: [
 		"<option value=0>&mdash;</option>",
 		"<option value=7>7</option>",
