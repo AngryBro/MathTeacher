@@ -1,0 +1,95 @@
+body {
+    font-size: 30pt;
+    margin-left: 100;
+    }
+li {
+    margin: 10px 0;
+    }
+a {
+    text-decoration: none;
+    color: black;
+    }
+a:hover {
+    color: blue;
+    }
+select {
+	border: 1px solid blue;
+	border-radius: 5px;
+	font-size: 30pt;
+	font-family: courier new;
+}
+button {
+	color: blue;
+	background-color: white;
+	border: 3px solid blue;
+	border-radius: 7px;
+	transition-duration: 0.8s;
+	font-family: courier new;
+	font-size: 30;
+}
+button:hover {
+	background-color: lightcyan;
+}
+button:active {
+	background-color: skyblue;
+	transition-duration: 0.1s;
+}
+input {
+	border: 1px solid blue;
+	border-radius: 5px;
+	font-size: 30pt;
+}
+table {
+	font-size: 20;
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+td {
+	border: 2px solid black;
+	padding: 7px;
+}
+tr {
+	text-align: left;
+	vertical-align: top;
+}
+textarea {
+	width: 225;
+	height: 550;
+	border-radius: 5px;
+	border: 1px solid blue;
+	font-size: 20;
+	font-family: Courier;
+	font-weight: bold;
+}
+.colortext {
+	width: 225;
+	height: 550;
+	border-radius: 5px;
+	border: 1px solid blue;
+	font-size: 20;
+	font-family: Courier;
+	font-weight: bold;
+}
+.ansblock {
+	width: 225;
+	height: 550;
+	border-radius: 5px;
+	border: 1px solid blue;
+	font-size: 20;
+	font-family: Courier;
+	font-weight: bold;
+	display: table;
+}
+.wrong {
+	color: red;
+}
+.right {
+	color: green;
+}
+.coment {
+	color: blue;
+}
+.h2like {
+	font-size: 30;
+	font-weight: bold;
+}
