@@ -5,8 +5,8 @@ data = {
 		"<option value=8>8</option>",
 		"<option value=9>9</option>",
 		"<option value=10>10</option>",
-		"<option value=24>25</option>",
-		"<option value=24>25</option>",
+		"<option value=24>24</option>",
+		"<option value=25>25</option>",
 		"<option value=33>33</option>",
 		"<option value=34>34</option>",
 		"<option value=35>35</option>",
@@ -28,16 +28,16 @@ data = {
 		"<option value=52>52</option>"
 	],
 	answers: {
-		7: ['а) да; б) нет; в) 97635241','а) нет; б) нет; в) да, 9 и 7'],
-		8: ['а) нет; б) нет; в) да','а) нет; б) нет; в) 6'],
-		9: ['а) да; б) нет; в) 33','а) да; б) нет; в) 38+1/7'],
+		7: ['а) да; б) нет; в) 97635241','а) нет; б) нет; в) да, 9 и 7.'],
+		8: ['а) нет; б) нет; в) да','а) нет; б) нет; в) 6.'],
+		9: ['а) да; б) нет; в) 33','а) да; б) нет; в) '+ans('38\\displaystyle\\frac{1}{7}')],
 		10: ['а) да; б) нет; в) 110','а) 2,2,2,2; б) нет; в) 9,10,11,11,11 или 9,10,11,22','а) нет; б) нет; в) 5992'],
 		24: [
 			ans('\\displaystyle\\arccos{\\frac{2}{\\sqrt{5}}}'),
 			ans('\\displaystyle\\arcsin{\\frac{24}{85}}'),
 			ans('0,6'),
 			ans('60^{\\circ}'),
-			ans('\\displaystyle\\arccos{3}{\\sqrt{19}}')
+			ans('\\displaystyle\\arccos{\\frac{3}{\\sqrt{19}}}')
 			],
 		25: ['null','<br><i>На ДЗ 25 пока нет ответов</i>'],
 		33: [
