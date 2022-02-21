@@ -1,6 +1,6 @@
 data = {
 	option: [
-		"<option>&mdash;</option>",
+		"<option value=0>&mdash;</option>",
 		"<option value=33>33</option>",
 		"<option value=34>34</option>",
 		"<option value=35>35</option>",
