@@ -21,8 +21,8 @@ data = {
 		"<option value=51>51</option>",
 		"<option value=52>52</option>"
 	],
-	answers: {33:
-		[
+	answers: {
+		33: [
 		abans(is(-1,3),is(-1)),
 		abans(is(3,9),is(9)),
 		abans(is(-2,0,2),is(0)),
