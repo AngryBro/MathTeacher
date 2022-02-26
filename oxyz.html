@@ -13,6 +13,7 @@
 			<li><a href="#vector">Вектор</a></li>
 			<li><a href="#lines">Уравнения прямой</a></li>
 			<li><a href="#planeeq">Уравнение плоскости</a></li>
+			<li><a href="#normal">Поиск вектора нормали к плоскости</a></li>
 			<li><a href="#angles">Углы</a></li>
 			<li><a href="#dists">Расстояния</a></li>
 		</ul>
@@ -34,9 +35,6 @@
 					\right)
 				\)<br>
 				\(M ~-\) матрица \(p \times q\).
-			</li>
-			<li>
-				\( |M| ~- \) определитель квадратной матрицы \(M\).
 			</li>
 			<li>
 				\(
@@ -96,47 +94,22 @@
 					\right)
 				\)
 			</li>
-			<li>
-				\(
-					\left|
-						\begin{array}{c}
-							a_{11} & a_{12} \\
-							a_{21} & a_{22}
-						\end{array}
-					\right| = a_{11} \cdot a_{22} - a_{12} \cdot a_{21}.
-				\)
-			</li>
-			<li>
-				\(
-					\left|
-						\begin{array}{c}
-							a_{11} & a_{12} & a_{13} \\
-							a_{21} & a_{22} & a_{23} \\
-							a_{31} & a_{32} & a_{33} 
-						\end{array}
-					\right| =
-					+a_{11} \cdot
-					\left|
-						\begin{array}{c}
-							a_{22} & a_{23} \\
-							a_{32} & a_{33}
-						\end{array}
-					\right|
-					-a_{21} \cdot
-					\left|
-						\begin{array}{c}
-							a_{12} & a_{13} \\
-							a_{32} & a_{33}
-						\end{array}
-					\right|
-					+a_{31} \cdot
-					\left|
-						\begin{array}{c}
-							a_{12} & a_{13} \\
-							a_{22} & a_{23}
-						\end{array}
-					\right|.
-				\)
+			<li> \(
+				\begin{pmatrix}
+					m_{1,1} & m_{1,2} & m_{1,3} \\
+					m_{2,1} & m_{2,2} & m_{2,3} \\
+					m_{3,1} & m_{3,2} & m_{3,3}
+				\end{pmatrix} \cdot 
+				\begin{pmatrix}
+					n_1 \\
+					n_2 \\
+					n_3
+				\end{pmatrix} = 
+				\begin{pmatrix}
+					m_{1,1} \cdot n_1+ m_{1,2} \cdot n_2+ m_{1,3} \cdot n_3 \\
+					m_{2,1} \cdot n_1+ m_{2,2} \cdot n_2+ m_{2,3} \cdot n_3 \\
+					m_{3,1} \cdot n_1+ m_{3,2} \cdot n_2+ m_{3,3} \cdot n_3
+				\end{pmatrix} \)
 			</li>
 		</ol>
 		<h2><a href="#begin" name="point">Точка</a></h2>
@@ -259,51 +232,39 @@
 			</li>
 		</ul></ul>
 		<h2><a href="#begin" name="planeeq">Уравнение плоскости</a></h2>
-		<ol>
-			<li>
 				Обозначения: 
 				<ul>
 					<li>\(\mu~-\) плоскость.</li>
-					<li>\(M~-\) точка.</li>
+					<li>\(M~-\) точка на плоскости.</li>
 					<li>\(\overrightarrow{n}~-\) нормальный вектор.</li>
 				</ul>
-				\(M \in \mu \perp \overrightarrow{n},~~~
-				M = \begin{pmatrix} x_{\small M}\\y_{\small M}\\z_{\small M}\end{pmatrix},~~
-				\overrightarrow{n} = \begin{pmatrix} n_{x}\\n_{y}\\n_{z}\end{pmatrix}
-				\).<br><br>
 				<a href="javascript:OpenList('plane')">Уравнение плоскости \(\mu:~~~
 				n_x(x-x_{\small M})+n_y(y-y_{\small M})+n_z(z-z_{\small M})=0\).</a>
 				<ul id='plane' hidden>
 					<li>\(\overrightarrow{MX} \cdot \overrightarrow{n} = 0,~~~~~~~~~~~~~~~~~\overrightarrow{MX}=\begin{pmatrix} x\\y\\z \end{pmatrix} - M\).</li>
 				</ul>
-				<br>Способ найти \(\overrightarrow{n}~:~~\)
-				\(
-					\begin{cases}
-						\overrightarrow{n} \cdot \overrightarrow{m}=0 \\
-						\overrightarrow{n} \cdot \overrightarrow{k}=0
-					\end{cases}
-					,~~~\mu\parallel\overrightarrow{m},\overrightarrow{k}
-					~-
-				\) параллельные к плоскости векторы.
-			</li>
-			<li>
-				Обозначения: 
-				<ul>
-					<li>\(\mu~-\) плоскость.</li>
-					<li>\(M~-\) точка.</li>
-					<li>\(\overrightarrow{m} \not\parallel \overrightarrow{n}~-\) параллельные к плоскости векторы.</li>
-				</ul>
-				\(M \in \mu \parallel \overrightarrow{m},\overrightarrow{n}
-				\).<br><br>
-				\(\overrightarrow{MX}=\begin{pmatrix} x\\y\\z \end{pmatrix} - M\).<br>
-				Уравнение плоскости \(\mu:~~~
-				\begin{vmatrix}
-				\overrightarrow{MX} 
-				 & \overrightarrow{m} & \overrightarrow{n} \\
-				\end{vmatrix} = 0
-				\).
-			</li>
-		</ol>
+		<h2><a href="#begin" name="normal">Поиск вектора нормали к плоскости</a></h2>
+		Обозначения:
+		<ul>
+			<li>\(\mu ~-~\) плоскость.</li>
+			<li>\(\overrightarrow{m} \not\parallel\overrightarrow{k}~-~\) параллельные к плоскости векторы.</li>
+			<li>\(\overrightarrow{n}~-~\) нормаль к плоскости.</li>
+		</ul>
+		\(
+			\overrightarrow{n} = \begin{pmatrix}
+					0 & -m_z & m_y \\
+					m_z & 0 & -m_x \\
+					-m_y & m_x & 0
+				\end{pmatrix} \cdot 
+				\overrightarrow{k}
+		\).<br><br>
+		Доказательство того, что это нормаль:<br><br>
+		\(
+			\begin{cases}
+				\overrightarrow{n} \cdot \overrightarrow{m} = 0 \\
+				\overrightarrow{n} \cdot \overrightarrow{k} = 0
+			\end{cases}
+		\)
 		<h2><a href="#begin" name="angles">Углы</a></h2>
 		Обозначения: 
 		<ul>
