@@ -24,7 +24,7 @@
             \) &mdash; невертикальная прямая</a>
                 <ul id="line" hidden="true">
                     <li>От \(a\) зависит угол наклона</li>
-                    <li>Содержит точку \((b;~c)\)</li>
+                    <li>Содержит точку \((b,~c)\)</li>
                 </ul>
             </li>
             <li><a href="javascript:OpenList('vert')">
@@ -32,7 +32,7 @@
                 x=a
             \) &mdash; вертикальная прямая</a>
                 <ul id="vert" hidden="true">
-                    <li>Содержит точку \((a;~0)\)</li>
+                    <li>Содержит точку \((a,~0)\)</li>
                 </ul>
             </li>
             <li><a href="javascript:OpenList('parabole')">
@@ -41,7 +41,7 @@
             \) &mdash; парабола</a>
                 <ul id="parabole" hidden="true">
                     <li>От \(a\) зависит направление ветвей и ширина</li>
-                    <li>Вершина \( (b;~c) \)</li>
+                    <li>Вершина \( (b,~c) \)</li>
                 </ul>
             </li>
 			<li><a href="javascript:OpenList('hparabole')">
@@ -51,7 +51,7 @@
                 <ul id="hparabole" hidden="true">
                     <li>От \(b\) зависит направление ветвей</li>
 					<li>От \(\displaystyle\frac{1}{a^2b}\) зависит ширина</li>
-                    <li>Вершина \( (c;~d) \)</li>
+                    <li>Вершина \( (c,~d) \)</li>
 					<li>Полупарабола в области \(ay \geq ad\)</li>
                 </ul>
             </li>
@@ -61,7 +61,7 @@
             \) &mdash; угол</a>
                 <ul id="angle" hidden="true">
                     <li>От \(a\) зависит направление сторон и величина угла</li>
-                    <li>Вершина \( (b;~c) \)</li>
+                    <li>Вершина \( (b,~c) \)</li>
                     <li>Левая сторона \(
                     \left\{
                         \begin{array}{l}
@@ -85,7 +85,7 @@
                 (x-a)^2 + (y-b)^2 = c,~c>0
             \) &mdash; окружность</a>
                 <ul id="circle" hidden="true">
-                    <li>Центр \( (a;~b) \)</li>
+                    <li>Центр \( (a,~b) \)</li>
                     <li>Радиус \( \sqrt{c} \)</li>
                 </ul>
             </li>
@@ -94,8 +94,32 @@
                 y = \frac{a}{x-b} + c,~a \neq 0
             \) &mdash; гипербола</a>
                 <ul id="hyperbole" hidden="true">
-                    <li>Центр \( (b;~c) \)</li>
+                    <li>Центр \( (b,~c) \)</li>
                     <li>От \(a\) зависит положение ветвей и расстояние между ними</li>
+                </ul>
+            </li>
+			<li><a href="javascript:OpenList('exp')">
+            \( \displaystyle
+                y = a^x,~0 < a \neq 1
+            \) &mdash; показательная функция</a>
+                <ul id="exp" hidden="true">
+                    <li>Содержит \( (0;~1) \)</li>
+                    <li>При \(a>1\) возрастает</li>
+					<li>При \(a < 1\) убывает </li>
+					<li>\(y>0\)</li>
+					<li>График выпуклый вниз</li>
+                </ul>
+            </li>
+			<li><a href="javascript:OpenList('log')">
+            \( \displaystyle
+                y = \log_a{x},~0 < a \neq 1
+            \) &mdash; логарифмическая функция</a>
+                <ul id="log" hidden="true">
+                    <li>Содержит \( (1;~0) \)</li>
+                    <li>При \(a>1\) возрастает</li>
+					<li>При \(a < 1\) убывает </li>
+					<li>\(x>0\)</li>
+					<li>График выпуклый вверх</li>
                 </ul>
             </li>
         </ol>
@@ -103,27 +127,27 @@
         <ol>
             <li>
                 \(
-                    (x_0;~y_0) \in F(x,~y) \Leftrightarrow F(x_0;~y_0)
+                    (x_0,~y_0) \in G(x,~y) \Leftrightarrow G(x_0,~y_0)
                 \)
             </li>
             <li>
                 \(
-                    \rho ( (x_1;~y_1);~(x_2;~y_2) ) = \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 }
+                    \rho ( (x_1,~y_1),~(x_2,~y_2) ) = \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 }
                 \)
             </li>
             <li>
                 \( \displaystyle
-                    \rho ( (x_0;~y_0);~ ax + by + c = 0 ) = \frac{|a x_0 + b y_0 + c|}{\sqrt{a^2 + b^2}}
+                    \rho ( (x_0,~y_0),~ ax + by + c = 0 ) = \frac{|a x_0 + b y_0 + c|}{\sqrt{a^2 + b^2}}
                 \)
             </li>
             <li>
-                Графики \(A(x,~y),~B(x,~y)\)
+                Графики \(G(x,~y),~\Gamma(x,~y)\)
                 <ul>
                     <li>Общие точки: \( 
                         \left\{
                             \begin{array}{l}
-                                A(x,~y) \\
-                                B(x,~y)
+                                G(x,~y) \\
+                                \Gamma(x,~y)
                             \end{array}
                         \right.
                     \)</li>
@@ -133,14 +157,14 @@
                 Окружности \((x-x_1)^2 + (y - y_1)^2 = a_1 \cancel \Leftrightarrow
                 (x-x_2)^2 + (y - y_2)^2 = a_2\)
                 <ul>
-                    <li>Касаются внешним образом: \( \rho ((x_1;~y_1);~(x_2;~y_2)) = \sqrt{a_1} + \sqrt{a_2} \)</li>
-                    <li>Касаются внутренним образом: \( \rho ((x_1;~y_1);~(x_2;~y_2)) = |\sqrt{a_1} - \sqrt{a_2}| \)</li>
+                    <li>Касаются внешним образом: \( \rho ((x_1,~y_1),~(x_2,~y_2)) = \sqrt{a_1} + \sqrt{a_2} \)</li>
+                    <li>Касаются внутренним образом: \( \rho ((x_1,~y_1),~(x_2,~y_2)) = |\sqrt{a_1} - \sqrt{a_2}| \)</li>
                 </ul>
             </li>
             <li>
                 Окружность \( (x-x_0)^2 + (y - y_0)^2 = z \) и прямая \(ax+by+c=0\)
                 <ul>
-                    <li>Касаются: \( \rho ( (x_0;~y_0);~ax+by+c=0 ) = \sqrt{z} \)</li>
+                    <li>Касаются: \( \rho ( (x_0,~y_0),~ax+by+c=0 ) = \sqrt{z} \)</li>
                 </ul>
             </li>
             <li>
