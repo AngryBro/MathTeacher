@@ -15,7 +15,7 @@
         <ol>
             <li>
             \(
-                ax+by+c=0
+                ax+by+c=0,~a^2+b^2 \neq 0
             \) &mdash; прямая
             </li>
             <li><a href="javascript:OpenList('line')">
@@ -23,8 +23,8 @@
                 y=a(x-b)+c
             \) &mdash; невертикальная прямая</a>
                 <ul id="line" hidden="true">
+					<li>Содержит точку \((b,~c)\)</li>
                     <li>От \(a\) зависит угол наклона</li>
-                    <li>Содержит точку \((b,~c)\)</li>
                 </ul>
             </li>
             <li><a href="javascript:OpenList('vert')">
@@ -40,13 +40,13 @@
                 y = a(x-b)^2 + c,~ a \neq 0
             \) &mdash; парабола</a>
                 <ul id="parabole" hidden="true">
+					<li>Вершина \( (b,~c) \)</li>
                     <li>От \(a\) зависит направление ветвей и ширина</li>
-                    <li>Вершина \( (b,~c) \)</li>
                 </ul>
             </li>
 			<li><a href="javascript:OpenList('hparabole')">
             \(
-                y = a\sqrt{b(x-c)} + d,~ a,b \neq 0
+                y = a\sqrt{b(x-c)} + d, ~ ab \neq 0
             \) &mdash; полупарабола</a>
                 <ul id="hparabole" hidden="true">
                     <li>От \(b\) зависит направление ветвей</li>
@@ -60,8 +60,8 @@
                 y = a|x-b|+c
             \) &mdash; угол</a>
                 <ul id="angle" hidden="true">
+					<li>Вершина \( (b,~c) \)</li>
                     <li>От \(a\) зависит направление сторон и величина угла</li>
-                    <li>Вершина \( (b,~c) \)</li>
                     <li>Левая сторона \(
                     \left\{
                         \begin{array}{l}
@@ -129,17 +129,7 @@
                     A \in G(x,~y) \Leftrightarrow G(A)
                 \)
             </li>
-            <li>
-                \(
-                    \rho ( (x_1,~y_1),~(x_2,~y_2) ) = \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 }
-                \)
-            </li>
-            <li>
-                \( \displaystyle
-                    \rho ( (x_0,~y_0),~ ax + by + c = 0 ) = \frac{|a x_0 + b y_0 + c|}{\sqrt{a^2 + b^2}}
-                \)
-            </li>
-            <li>
+			<li>
                 Графики \(G(x,~y),~\Gamma(x,~y)\)
                 <ul>
                     <li>Общие точки: \( 
@@ -153,11 +143,21 @@
                 </ul>
             </li>
             <li>
+                \(
+                    \rho ( (x_1,~y_1),~(x_2,~y_2) ) = \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 }
+                \)
+            </li>
+            <li>
+                \( \displaystyle
+                    \rho ( (x_0,~y_0),~ ax + by + c = 0 ) = \frac{|a x_0 + b y_0 + c|}{\sqrt{a^2 + b^2}}
+                \)
+            </li>
+            <li>
                 Окружности \((x-x_1)^2 + (y - y_1)^2 = a_1 \cancel \Leftrightarrow
                 (x-x_2)^2 + (y - y_2)^2 = a_2\)
                 <ul>
                     <li>Касаются внешним образом: \( \rho ((x_1,~y_1),~(x_2,~y_2)) = \sqrt{a_1} + \sqrt{a_2} \)</li>
-                    <li>Касаются внутренним образом: \( \rho ((x_1,~y_1),~(x_2,~y_2)) = |\sqrt{a_1} - \sqrt{a_2}| \)</li>
+                    <li>Касаются внутренним образом: \( \rho ((x_1,~y_1),~(x_2,~y_2)) = \left|\sqrt{a_1} - \sqrt{a_2}\right| \)</li>
                 </ul>
             </li>
             <li>
