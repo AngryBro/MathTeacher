@@ -325,6 +325,21 @@
                         </li>
                     </ul>
                 </li>
+				<li>
+					\(\begin{array}[t]{|l|} \hline
+						\sqrt[2n]{a} \neq b \Leftrightarrow
+						\begin{cases}
+							a \geq 0 \\
+							\left[
+								\begin{array}{l}
+									b < 0 \\
+									a \neq b^{2n}
+								\end{array}
+							\right.
+						\end{cases} \\ \hline
+					\end{array}
+					\)
+				</li>
             </ol>
         <h2><a name="more"></a><a href="#begin">\( \Huge > \normalsize,~ \Huge< \normalsize,~ \Huge \geq \normalsize,~ \Huge \leq \)</a></h2>
             <ol>
@@ -471,6 +486,37 @@
                         </li>
                     </ul>
                 </li>
+				<li>
+					\(
+						\begin{array}[t]{|l|} \hline
+							\sqrt[2n]{a} \vee b \overset{\vee \in \{>,\geq\}}{\Longleftrightarrow}
+							\left[
+								\begin{array}{l}
+									\begin{cases}
+										b < 0 \\
+										a \geq 0
+									\end{cases} \\
+									\begin{cases}
+										b  \geq 0 \\
+										a \vee b^{2n}
+									\end{cases}
+								\end{array}
+							\right. \\ \hline 
+						\end{array}
+					\)
+				</li>
+				<li>
+					\(
+						\begin{array}[t]{|l|} \hline
+							\sqrt[2n]{a} \vee b \overset{\vee \in \{ < ,\leq\}}{\Longleftrightarrow}
+							\begin{cases}
+								b \geq 0 \\
+								a \geq 0 \\
+								a \vee b^{2n}
+							\end{cases} \\ \hline
+						\end{array}
+					\)
+				</li>
             </ol>
         <h2><a name="andor"></a><a href="#begin">\( \Huge \{ \normalsize,~ \Huge [  \)</a></h2>
             <ol>
