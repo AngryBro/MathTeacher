@@ -526,26 +526,6 @@
         <h2><a name="andor"></a><a href="#begin">\( \Huge \{ \normalsize,~ \Huge [  \)</a></h2>
             <ol>
                 <li>
-                \( \begin{array}[t]{|l|} \hline
-                    \displaystyle ложь \Leftrightarrow  x \not \in \mathbb{R}
-                    \\ \hline \end{array}
-                \)
-                </li>
-                <li><a href="javascript:OpenList('list13')">
-                \( \begin{array}[t]{|l|} \hline
-                    истина \Leftrightarrow ограничения
-                    \\ \hline \end{array}
-                \)</a>
-                    <ul id="list13" hidden="true">
-                        <li>
-                            \(
-                                истина~без~ограничений \Leftrightarrow
-                                x \in \mathbb{R}
-                            \)
-                        </li>
-                    </ul>
-                </li>
-                <li>
                 \( \begin{array}[t]{|l|} \hline 
                     \left\{
                         \begin{array}{l}
@@ -568,6 +548,89 @@
                     \Leftrightarrow
                     A \\ \hline \end{array}
                 \)
+                </li>
+				<li>
+					\(\begin{array}[t]{|l|} \hline
+						\begin{cases}
+							\begin{cases}
+								A \\ B
+							\end{cases} \\
+							C
+						\end{cases} \Leftrightarrow
+						\begin{cases}
+							A \\ B \\ C
+						\end{cases}\\ \hline \end{array}
+					\)
+				</li>
+				<li>
+					\(\begin{array}[t]{|l|} \hline
+						\left[
+						\begin{array}{l}
+							\left[
+							\begin{array}{l}
+								A \\ B
+							\end{array}\right. \\
+							C
+						\end{array}\right. \Leftrightarrow
+						\left[
+						\begin{array}{l}
+							A \\ B \\ C
+						\end{array}\right. \\ \hline \end{array}
+					\)
+				</li>
+				<li>
+					\(\begin{array}[t]{|l|} \hline
+						\begin{cases}
+							\left[
+								\begin{array}{l}
+									A \\
+									B 
+								\end{array} 
+							\right. \\
+							C
+						\end{cases} ~\Leftrightarrow~
+						\left[
+							\begin{array}{l}
+								\begin{cases}
+									A \\
+									C 
+								\end{cases} \\
+								\begin{cases}
+									B \\
+									C 
+								\end{cases}
+							\end{array}
+						\right.
+						\\ \hline \end{array}
+					\)
+				</li>
+				<li>
+					\(\begin{array}[t]{|l|} \hline
+						\begin{cases}
+							A \\ B
+						\end{cases} ~~~\overset{A \Rightarrow B}{\Longleftrightarrow}
+						~~~A\\ \hline \end{array}
+					\)
+				</li>
+				<li>
+                \( \begin{array}[t]{|l|} \hline
+                    \displaystyle ложь \Leftrightarrow  x \not \in \mathbb{R}
+                    \\ \hline \end{array}
+                \)
+                </li>
+                <li><a href="javascript:OpenList('list13')">
+                \( \begin{array}[t]{|l|} \hline
+                    истина \Leftrightarrow ограничения
+                    \\ \hline \end{array}
+                \)</a>
+                    <ul id="list13" hidden="true">
+                        <li>
+                            \(
+                                истина~без~ограничений \Leftrightarrow
+                                x \in \mathbb{R}
+                            \)
+                        </li>
+                    </ul>
                 </li>
                 <li>
                 \( \begin{array}[t]{|l|} \hline
@@ -616,40 +679,6 @@
                 </li>
                 <li>
                 \(\begin{array}[t]{|l|} \hline
-                    \left\{
-                        \begin{array}{l}
-                            a = b \\
-                            F(a)
-                        \end{array}
-                    \right.
-                    \Leftrightarrow
-                    \left\{
-                        \begin{array}{l}
-                            a = b \\
-                            F(b)
-                        \end{array}
-                    \right. \\ \hline \end{array}
-                \)
-                </li>
-                <li>
-                \(\begin{array}[t]{|l|} \hline
-                    \left\{
-                        \begin{array}{l}
-                            A \Leftrightarrow B \\
-                            A
-                        \end{array}
-                    \right.
-                    \Leftrightarrow
-                    \left\{
-                        \begin{array}{l}
-                            A \Leftrightarrow B \\
-                            B
-                        \end{array}
-                    \right. \\ \hline \end{array}
-                \)
-                </li>
-                <li>
-                \(\begin{array}[t]{|l|} \hline
                     A \Leftrightarrow
                     \left[
                         \begin{array}{l}
@@ -676,32 +705,6 @@
                     \right. \\ \hline \end{array}
                 \)
                 </li>
-				<li>
-					\(\begin{array}[t]{|l|} \hline
-						\begin{cases}
-							\left[
-								\begin{array}{l}
-									A \\
-									B 
-								\end{array} 
-							\right. \\
-							C
-						\end{cases} ~\Leftrightarrow~
-						\left[
-							\begin{array}{l}
-								\begin{cases}
-									A \\
-									C 
-								\end{cases} \\
-								\begin{cases}
-									B \\
-									C 
-								\end{cases}
-							\end{array}
-						\right.
-						\\ \hline \end{array}
-					\)
-				</li>
             </ol>
     </body>
 </html>    
