@@ -86,9 +86,9 @@
 				\right.
 				\)
 			</li>
-			<li>
-				Определяем возможные решения \(x_i\).
-			</li>
+			<!-- <li> -->
+				<!-- Определяем возможные решения \(x_i\). -->
+			<!-- </li> -->
 			<li>
 				Выполняется поиск множеств: 
 				<br>\(A_i = \{a ~:~ x_i~является~решением\}\)<br>
@@ -97,26 +97,36 @@
 			</li>
 			<li>
 				Возможны следующие случаи:<br>
-					<br>\(\large Простой\)<br>
+				<ul>
+					<li>
 						\(
 							G_i(x,a) \Leftrightarrow 
 							\begin{cases}
 								x = x_i(a) \\
-								H_i(x,a)
+								a \in A_i
 							\end{cases}
-						\)<br><br>
-						Тогда \(H_i(x_i,a) \Leftrightarrow a \in A_i\).
-					
-					<br><br>\(\large Сложный\)<br>
-						Определяем \(a\), при которых 
-						\(G_i(x,a) \Leftrightarrow 
+						\)
+					</li>
+					<li>
+						\(
+							G_i(x,a) \Leftrightarrow
 							\begin{cases}
-								x=x_i(a) \\
-								H_i(x,a)
+								x \in T \\
+								a \in A_{\infty}^i
 							\end{cases}
-						\).<br>
-						Исследуется как простой случай.<br><br>
-						При остальных \(a\) проверяем что получится. Либо решений не будет, либо будет бесконечно.
+						\)
+					</li>
+					<li>
+						\(
+							G_i(x,a) \Leftrightarrow
+							\begin{cases}
+								x^2+px+q = 0 \\
+								a \in A_i \\
+								x \neq t
+							\end{cases}
+						\)
+					</li>
+				</ul>
 			</li>
 			<li>
 				Находим множества \(B_{i,j}= \{a~:~x_i=x_j,~i < j \}\). <br>
@@ -213,7 +223,7 @@
 				<table>
 				<tr>
 				<td>
-				\(F(x,f(x,a),a) \overset{t = f(x,a)}{\Longleftrightarrow} F(x,t,a)\)
+				\(F(x,f(x,a),a) \overset{u = f(x,a)}{\Longleftrightarrow} F(x,u,a)\)
 				</td>
 				</tr>
 				</table>
@@ -356,17 +366,19 @@
 		<h4>Решение</h4>
 		<ol>
 			<li>
-				Находим все такие \(f_1(x),~f_2(x),~f_2(x),\ldots f_k(x)\),<br>
+				Находим все такие \(f_i(x)\),<br>
 				для которых верно \(F(f_i(x),a) \Leftrightarrow F(x,a)\).<br>
 				\(f_1(x) = x\).
 			</li>
 			<li>
-				Если \(x\) &mdash; решение, то \(f_2(x),~f_2(x),\ldots f_k(x)\) 
+				Если \(x\) &mdash; решение, то \(f_2(x),~f_3(x)\ldots f_k(x)\) 
 				&mdash; тоже решения.<br>
-				Всего \(k\) симметричных решений.
 			</li>
 			<li>
-				Если \(n ~\not\hspace{-1mm}\vdots ~~ k\), рассматриваем совпадения решений:<br>
+				Решений \(f_1(x),~f_2(x),\ldots f_k(x)~~~k\), требуется решений \(n\),<br>
+				\(n\) не делится на \(k\), следовательно какие-то решения совпадают.
+			</li>
+			<li> Совпадения решений:<br>
 				\(
 					\begin{cases}
 						F(x,a) \\
@@ -375,12 +387,98 @@
 				\).
 			</li>
 			<li>
-				При каждом найденном \(a\) решаем \(F(x,a)\).<br>
+				При каждом найденном \(a\) находим количество решений \(F(x,a)\).<br>
 			</li>
 			<li>
 				В ответ выписываем \(a\), при которых ровно \(n\) решений.
 			</li>
 		</ol>
+		<a href='javascript:OpenList("example_symmetry")'><b>Пример</b></a>
+		<div hidden id='example_symmetry' style="margin-top:1cm">
+			<table>
+			<tr style="text-align:left"><td>
+				Найдите все значения параметра \(a\), при каждом из которых система<br><br>
+				\(~~~~~~~
+					\begin{cases}
+						ax^2+a-1=y-|\sin{x}| \\
+						\operatorname{tg^2}{x}+y^2=1
+					\end{cases}
+				\)<br><br>
+				имеет единственное решение.
+			</td></tr>
+		</table><br>
+		<b>Решение</b><br><br>
+		Если \((x;y)\) &mdash; решение, то \((-x;y)\) тоже решение, так как<br>
+		\(a(-x)^2=ax^2,~~|\sin{(-x)}|=|\sin{x}|,~~\operatorname{tg^2}{(-x)}=\operatorname{tg^2}{x}\).<br><br>
+		Решений \((x;y),~(-x;y)\) 2, требуется 1, 1 не делится на 2, следовательно решения должны совпадать.<br><br>
+		1. \(
+			\begin{cases}
+				(x;y)=(-x;y) \\
+				ax^2+a-1=y-|\sin{x}| \\
+				\operatorname{tg^2}{x}+y^2=1
+			\end{cases} \Leftrightarrow
+			\begin{cases}
+				x=0 \\
+				a-1=y \\
+				y^2=1
+			\end{cases} \Rightarrow
+			(a-1)^2 = 1 \Leftrightarrow
+			\left[
+				\begin{array}{l}
+					a = 0 \\
+					a = 2
+				\end{array}
+			\right.
+		\).<br><br>
+		При \(a = 0\):<br>
+		\(
+			\begin{cases}
+				-1=y-|\sin{x}| \\
+				\operatorname{tg^2}{x}+y^2=1
+			\end{cases}
+		\), пары \((0;-1)\) и \((\pi ;-1)\) являются решениями. Решений больше 1.<br><br>
+		При \(a=2\):<br>
+		\(
+			\begin{cases}
+				2x^2+1=y-|\sin{x}| \\
+				\operatorname{tg^2}{x}+y^2=1
+			\end{cases} \Leftrightarrow
+			\begin{cases}
+				y = 2x^2+1+|\sin{x}| \\
+				y^2=1-\operatorname{tg^2}{x}
+			\end{cases};
+		\)<br><br>
+		Так как \(x^2\geq 0,~~|\sin{x}|\geq 0,~~-\operatorname{tg^2}{x}\leq 0\), то <br><br>
+		\(
+			\begin{cases}
+				y \geq 1 \\
+				y^2 \leq 1
+			\end{cases} \Leftrightarrow
+			\begin{cases}
+				y \geq 1 \\
+				-1 \leq y \leq 1
+			\end{cases} \Leftrightarrow y = 1.
+		\)<br><br>
+		\(
+			\begin{cases}
+				y = 2x^2+1+|\sin{x}| \\
+				y^2=1-\operatorname{tg^2}{x}
+			\end{cases} \Leftrightarrow
+			\begin{cases}
+				2x^2+|\sin{x}|=0 \\
+				\operatorname{tg^2}{x} = 0 \\
+				y = 1
+			\end{cases} \Leftrightarrow
+			\begin{cases}
+				(x;y)=(0;1) \\
+				\sin{x} = 0 \\
+				\operatorname{tg}{x} = 0
+			\end{cases} \Leftrightarrow (x;y)=(0;1).
+		\)<br>
+		Одно решение.<br><br>
+		Одно решение при \(a=2\).<br><br>
+		<b>Ответ:</b> \(a=2\).
+		</div>
 		<h2><a name='evaluation' href='#begin'>Оценка</a></h2>
 		<h4>Постановка задачи</h4>
 		<table>
@@ -392,7 +490,7 @@
 		<h4>Решение</h4>
 		<ol>
 			<li>
-				Используя свойства выражений из пункта 3, составляем такую систему \(G(a) \Leftarrow F(\overrightarrow{x},a)\),<br>
+				Используя свойства выражений из пункта 3, составляем такую систему \(G(a) \Leftarrow F(x,a)\),<br>
 				решением которой является конечное множество значений \(a\).
 			</li>
 			<li>
