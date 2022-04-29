@@ -46,7 +46,22 @@
 						\end{array}
 					\right)
 				\) &ndash; матрица \(3 \times 1\), используемая для обозначения координат
-				точек и векторов.
+				векторов.
+			</li>
+			<li>
+				\(
+					\left(
+						x,y,z
+					\right)
+				\) &ndash; матрица \(1 \times 3\), используемая для обозначения координат
+				точек.
+			</li>
+			<li>
+				\(
+					(x,y,z)^T = \begin{pmatrix}
+						x\\y\\z
+					\end{pmatrix}
+				\).
 			</li>
 		</ol>
 		<h3>Свойства</h3>
@@ -86,11 +101,7 @@
 				Точка \(M\) имеет координаты \(x,~y,~z\):
 				\( ~~~M = 
 					\left(
-						\begin{array}{c}
-							x \\
-							y \\
-							z
-						\end{array}
+						x,y,z
 					\right)
 				\).
 			</li>
@@ -120,17 +131,7 @@
 				записывается так: \(\overrightarrow{MN}\).
 			</li>
 			<li>
-				Вектор \(\overrightarrow{m}\) имеет координаты \(x,~y,~z\):
-				\(~~~\overrightarrow{m} =
-					\begin{pmatrix}
-						x \\
-						y \\
-						z
-					\end{pmatrix}
-				\).
-			</li>
-			<li>
-				\(\overrightarrow{MN} = N - M\).
+				\(\overrightarrow{MN} = N^T - M^T\).
 			</li>
 			<li>
 				\(\overrightarrow{m} ~\parallel~ k \cdot \overrightarrow{m}\).
@@ -144,7 +145,7 @@
 			</li>
 			<li> 
 				Длина вектора: \(\left|\overrightarrow{m}\right| = 
-				\sqrt{\overrightarrow{m}\cdot\overrightarrow{m}}\).
+				\sqrt{\overrightarrow{m}^2}\).
 			</li>
 			<li><a href="javascript:OpenList('perp')">Угол между векторами:
 				\(~~~
@@ -171,7 +172,7 @@
 			<li>\(\overrightarrow{n}~-\) направляющий вектор.</li>
 		</ul>
 		\(M \in m \parallel \overrightarrow{n},~~~
-		M = \begin{pmatrix} x_{\small M}\\y_{\small M}\\z_{\small M}\end{pmatrix},~~
+		M = ( x_{\small M}, y_{\small M}, z_{\small M}),~~
 		\overrightarrow{n} = 
 		\begin{pmatrix} n_{x}\\n_{y}\\n_{z}\end{pmatrix}
 		\).<br><br>
@@ -206,11 +207,8 @@
 					<li>\(M~-\) точка на плоскости.</li>
 					<li>\(\overrightarrow{n}~-\) нормальный вектор.</li>
 				</ul>
-				<a href="javascript:OpenList('plane')">Уравнение плоскости \(\mu:~~~
-				n_x(x-x_{\small M})+n_y(y-y_{\small M})+n_z(z-z_{\small M})=0\).</a>
-				<ul id='plane' hidden>
-					<li>\(\overrightarrow{MX} \cdot \overrightarrow{n} = 0,~~~~~~~~~~~~~~~~~\overrightarrow{MX}=\begin{pmatrix} x\\y\\z \end{pmatrix} - M\).</li>
-				</ul>
+				Уравнение плоскости \(\mu:~~~
+				n_x(x-x_{\small M})+n_y(y-y_{\small M})+n_z(z-z_{\small M})=0\).
 		<h2><a href="#begin" name="normal">Поиск вектора нормали к плоскости</a></h2>
 		Обозначения:
 		<ul>
@@ -285,9 +283,9 @@
 			</li>
 			<li>
 				\(\rho(M,\mu) = \displaystyle 
-					\frac{|f(M)|}
-					{\left|\overrightarrow{n}\right|},~~~
-					f\tiny\begin{pmatrix} x\\y\\z\end{pmatrix}\normalsize=0~-\) уравнение \(\mu \perp \overrightarrow{n}
+					\frac{|ax_M+by_M+cz_M+d|}
+					{\sqrt{a^2+b^2+c^2}},~~~
+					ax+by+cz+d=0~-\) уравнение \(\mu
 				\).
 			</li>
 			<li>
