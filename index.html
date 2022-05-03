@@ -60,6 +60,54 @@
 					<li><a target="blank_" href="empty.html">Задание 18</a></li>
 				</ul>
 			</li>
+			<li>
+                <h1><a href="javascript:OpenList('groups'); CloseLists('schedule21','schedule22')">Расписание занятий групп</a></h1>
+                <ul id="groups" hidden="true">
+                    <li>
+                        <a href="javascript:OpenList('schedule21')">Группа ПОВТОР (21)</a>
+                            <table hidden="true" id="schedule21">
+								<tr>
+									<td><b>День</b></td><td><b>Время</b></td>
+								</tr>
+								<tr>
+									<td>Понедельник</td><td>15:00</td>
+								</tr>
+								<tr>
+									<td>Четверг</td><td>16:30</td>
+								</tr>
+								<tr>
+									<td>Пятница</td><td>15:00</td>
+								</tr>
+							</table>
+                    </li>
+                    <li>
+                        <a href="javascript:OpenList('schedule22')">Группа ПЛАНИМЕТРИЯ (22)</a>
+                        <div hidden="true" id="schedule22">
+							<table>
+								<tr>
+									<td><b>День</b></td><td><b>Время</b></td>
+								</tr>
+								<tr>
+									<td>Вторник</td><td>16:00</td>
+								</tr>
+								<tr>
+									<td>Среда</td><td>17:30</td>
+								</tr>
+								<tr>
+									<td>Воскресенье</td><td>14:00</td>
+								</tr>
+							</table>
+						</div>	
+                    </li>
+                    <!-- <li> -->
+                        <!-- <a href="javascript:OpenList('schedule23')">Группа 23</a> -->
+                        <!-- <ul hidden="true" id="schedule23"> -->
+                            <!-- <li>Среда, суббота, 16:30 по МСК</li> -->
+                        <!-- </ul> -->
+                    <!-- </li> -->
+                </ul>
+                
+            </li>
 			<li><h1><a target="blank_" href="https://docs.google.com/spreadsheets/d/1RU0q-kth5SK5-9jkqoVvPVbbn7mpAwynWZSuZR6ki3s/edit?usp=sharing">
 			Результаты диагностик</a></h1></li>
             <li><h1><a href="javascript:OpenList('hardtasks')">Актуальные задачи с *</a></h1></li>
@@ -91,30 +139,7 @@
                     \)
                 </li>
             </ol>
-            <li>
-                <h1><a href="javascript:OpenList('groups'); CloseLists('schedule21','schedule22','schedule23')">Расписание занятий групп 21, 22, 23</a></h1>
-                <ul id="groups" hidden="true">
-                    <li>
-                        <a href="javascript:OpenList('schedule21')">Группа 21</a>
-                        <ul hidden="true" id="schedule21">
-                            <li>Понедельник, четверг, 15:00 по МСК</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:OpenList('schedule22')">Группа 22</a>
-                        <ul hidden="true" id="schedule22">
-                            <li>Вторник, пятница, 16:00 по МСК</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:OpenList('schedule23')">Группа 23</a>
-                        <ul hidden="true" id="schedule23">
-                            <li>Среда, суббота, 16:30 по МСК</li>
-                        </ul>
-                    </li>
-                </ul>
-                
-            </li>
+            
             <li><h3><a target="_blank" href="https://docs.google.com/spreadsheets/d/1ymkx7Tbok4JtQovr6okvu_1bpVVptfb1myr_Rn2VuQI/edit?usp=sharing">Результаты учеников на ЕГЭ 2021</a></h3></li>
             <li><h3><a target="_blank" href="https://drive.google.com/drive/folders/1xL7xy0TNA6vJ0Plzh84lB54qohrkL4WA?usp=sharing">Бланки учеников</a></h3></li>
             <li><h3><a target="_blank" href="https://drive.google.com/drive/folders/10i2RwvCOwfOsMkoITA6WvmfDNlP66Xfi?usp=sharing">Бланки преподавателя</a></h3></li>
